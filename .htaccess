@@ -1,0 +1,2 @@
+RewriteCond %{REQUEST_URI} ^/SERVER.PHP
+RewriteRule ^(.*)$ /index.php/server [P]

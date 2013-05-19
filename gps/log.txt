@@ -1,0 +1,148 @@
+[[[[[[[[[[[[[[[[[[[Saturday, 16-Mar-13 18:43:37 IRST]]]]]]]]]]]]]]]]]]]]]]]]]]
+Array
+(
+    [DOCUMENT_ROOT] => /home/shadelan/public_html
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    [HTTP_ACCEPT_CHARSET] => ISO-8859-1,utf-8;q=0.7,*;q=0.3
+    [HTTP_ACCEPT_ENCODING] => gzip,deflate,sdch
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.8
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_COOKIE] => cpsession=shadelan%3aKI1xjQjifEWj5ipMsOWUguTjHtXhqyjroZraBPkMH6EHZyyPf_rjphdlTT4tRIEb; langedit=; lang=; cprelogin=no
+    [HTTP_HOST] => shadeland.net
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.5 Safari/537.31
+    [PATH] => /bin:/usr/bin
+    [QUERY_STRING] => AVL=1&data=(((((000003,E5124.080075,N3540.880143,1169.176147,20130126182155.0.00000000000,0.00000000000,0000000000000000)
+    [REDIRECT_STATUS] => 200
+    [REMOTE_ADDR] => 5.52.93.169
+    [REMOTE_PORT] => 17462
+    [REQUEST_METHOD] => GET
+    [REQUEST_URI] => /gps/server.php?AVL=1&data=(((((000003,E5124.080075,N3540.880143,1169.176147,20130126182155.0.00000000000,0.00000000000,0000000000000000)
+    [SCRIPT_FILENAME] => /home/shadelan/public_html/gps/server.php
+    [SCRIPT_NAME] => /gps/server.php
+    [SERVER_ADDR] => 5.144.130.35
+    [SERVER_ADMIN] => webmaster@shadeland.net
+    [SERVER_NAME] => shadeland.net
+    [SERVER_PORT] => 80
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache
+    [PHP_SELF] => /gps/server.php
+    [REQUEST_TIME] => 1363446817
+    [argv] => Array
+        (
+            [0] => AVL=1&data=(((((000003,E5124.080075,N3540.880143,1169.176147,20130126182155.0.00000000000,0.00000000000,0000000000000000)
+        )
+
+    [argc] => 1
+)
+Array
+(
+)
+Array
+(
+    [AVL] => 1
+    [data] => (((((000003,E5124.080075,N3540.880143,1169.176147,20130126182155.0.00000000000,0.00000000000,0000000000000000)
+)
+Array
+(
+)
+[[[[[[[[[[[[[[[[[[[END OF REQUEST]]]]]]]]]]]]]]]]]]]]]]]]]]
+[[[[[[[[[[[[[[[[[[[Saturday, 16-Mar-13 18:45:26 IRST]]]]]]]]]]]]]]]]]]]]]]]]]]
+Array
+(
+    [DOCUMENT_ROOT] => /home/shadelan/public_html
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    [HTTP_ACCEPT_CHARSET] => ISO-8859-1,utf-8;q=0.7,*;q=0.3
+    [HTTP_ACCEPT_ENCODING] => gzip,deflate,sdch
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.8
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_COOKIE] => cpsession=shadelan%3aKI1xjQjifEWj5ipMsOWUguTjHtXhqyjroZraBPkMH6EHZyyPf_rjphdlTT4tRIEb; langedit=; lang=; cprelogin=no
+    [HTTP_HOST] => shadeland.net
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.5 Safari/537.31
+    [PATH] => /bin:/usr/bin
+    [QUERY_STRING] => 
+    [REDIRECT_STATUS] => 200
+    [REMOTE_ADDR] => 5.52.93.169
+    [REMOTE_PORT] => 17470
+    [REQUEST_METHOD] => GET
+    [REQUEST_URI] => /gps/server.php
+    [SCRIPT_FILENAME] => /home/shadelan/public_html/gps/server.php
+    [SCRIPT_NAME] => /gps/server.php
+    [SERVER_ADDR] => 5.144.130.35
+    [SERVER_ADMIN] => webmaster@shadeland.net
+    [SERVER_NAME] => shadeland.net
+    [SERVER_PORT] => 80
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache
+    [PHP_SELF] => /gps/server.php
+    [REQUEST_TIME] => 1363446926
+    [argv] => Array
+        (
+        )
+
+    [argc] => 0
+)
+Array
+(
+)
+Array
+(
+)
+Array
+(
+)
+[[[[[[[[[[[[[[[[[[[END OF REQUEST]]]]]]]]]]]]]]]]]]]]]]]]]]
+[[[[[[[[[[[[[[[[[[[Saturday, 16-Mar-13 18:46:04 IRST]]]]]]]]]]]]]]]]]]]]]]]]]]
+Array
+(
+    [DOCUMENT_ROOT] => /home/shadelan/public_html
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+    [HTTP_ACCEPT_CHARSET] => ISO-8859-1,utf-8;q=0.7,*;q=0.3
+    [HTTP_ACCEPT_ENCODING] => gzip,deflate,sdch
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.8
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_COOKIE] => cpsession=shadelan%3aKI1xjQjifEWj5ipMsOWUguTjHtXhqyjroZraBPkMH6EHZyyPf_rjphdlTT4tRIEb; langedit=; lang=; cprelogin=no
+    [HTTP_HOST] => shadeland.net
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.5 Safari/537.31
+    [PATH] => /bin:/usr/bin
+    [PATH_INFO] => /server
+    [PATH_TRANSLATED] => /home/shadelan/public_html/gps/index.php
+    [QUERY_STRING] => data=(((((000003,E5127.315306,N3544.949062,1166.832520,20130114185702.0.93049300000,280.094666000,0000000000000000)
+    [REDIRECT_STATUS] => 200
+    [REMOTE_ADDR] => 5.52.93.169
+    [REMOTE_PORT] => 17472
+    [REQUEST_METHOD] => GET
+    [REQUEST_URI] => /gps/index.php/server?data=(((((000003,E5127.315306,N3544.949062,1166.832520,20130114185702.0.93049300000,280.094666000,0000000000000000)
+    [SCRIPT_FILENAME] => /home/shadelan/public_html/gps/index.php
+    [SCRIPT_NAME] => /gps/index.php
+    [SERVER_ADDR] => 5.144.130.35
+    [SERVER_ADMIN] => webmaster@shadeland.net
+    [SERVER_NAME] => shadeland.net
+    [SERVER_PORT] => 80
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_SIGNATURE] => 
+    [SERVER_SOFTWARE] => Apache
+    [PHP_SELF] => /gps/index.php/server
+    [REQUEST_TIME] => 1363446964
+    [argv] => Array
+        (
+            [0] => data=(((((000003,E5127.315306,N3544.949062,1166.832520,20130114185702.0.93049300000,280.094666000,0000000000000000)
+        )
+
+    [argc] => 1
+)
+Array
+(
+)
+Array
+(
+    [data] => (((((000003,E5127.315306,N3544.949062,1166.832520,20130114185702.0.93049300000,280.094666000,0000000000000000)
+)
+Array
+(
+)
+[[[[[[[[[[[[[[[[[[[END OF REQUEST]]]]]]]]]]]]]]]]]]]]]]]]]]

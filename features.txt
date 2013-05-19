@@ -1,0 +1,30 @@
+Vehicles :
+    Info:
+    Position:
+    Status:
+
+
+Incident:
+
+IMPORTANT ::::::::::::::
+ object hav peroperies ,
+  incident.Vehicles=List is
+  getVehicles(incidnet);
+  from m_incident_vehicles and so on .
+  eg ,vehicle.incident is
+  getIncident(vehicle)
+  from m_incident_vehicle
+  eg : order.vehicle is
+  getVehicle(order);
+  from order Model
+  vehicle.postion is
+  getPosition(vehicle);
+ IMPORTANT ::::::::::::::::
+  helper fucntion may be every where ;
+  eg :
+  vehicle.position.distanceTo(position) is
+  getDistance(vehicle.position,position);
+
+
+ :: TODOS::
+ should find better implement for objects to prevent to many db requests !

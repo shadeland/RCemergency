@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYSIS_IN_BACKGROUND" value="true" />
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/application/controllers/server.php" line="11" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" name="Default" comment="" />
+    <ignored path="project.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/app.js" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1367445179757" ignored="false" />
+    <file path="/server.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368927448077" ignored="false" />
+    <file path="/my_models.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1367420019875" ignored="false" />
+    <file path="/service.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368925517148" ignored="false" />
+    <file path="/.htaccess" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1367427944913" ignored="false" />
+    <file path="/gpsdata.html" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1367444992716" ignored="false" />
+    <file path="/app_new.js" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368925440678" ignored="false" />
+    <file path="/index.html" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1367929017131" ignored="false" />
+    <file path="/dummy.xml" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368883545658" ignored="false" />
+    <file path="/centers.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1367493452927" ignored="false" />
+    <file path="/m_vehicles.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368926584892" ignored="false" />
+    <file path="/index.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368928198582" ignored="false" />
+    <file path="/m_gpsdata.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368839935553" ignored="false" />
+    <file path="/Gpsdata.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368850502676" ignored="false" />
+    <file path="/style.css" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368746252430" ignored="false" />
+    <file path="/m_avl.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368926212807" ignored="false" />
+    <file path="/features.txt" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368896421102" ignored="false" />
+    <file path="/M_position.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368461933965" ignored="false" />
+    <file path="/M_incindent.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368463491405" ignored="false" />
+    <file path="/a.dummy" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368849818085" ignored="false" />
+    <file path="/m_incident.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368854242078" ignored="false" />
+    <file path="/m_position.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368495371969" ignored="false" />
+    <file path="/scrollable.js" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368665983664" ignored="false" />
+    <file path="/m_order.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368916296552" ignored="false" />
+    <file path="/m_vehicle_status.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368917250869" ignored="false" />
+    <file path="/welcome.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368849853242" ignored="false" />
+    <file path="/vehicle_incident.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368850898376" ignored="false" />
+    <file path="/m_vehicle_incident.php" changelist="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" time="1368920089865" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="project">
+      <favorite_root url="" module="project" type="module" klass="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode">
+        <favorite_root url="file://E:/TechStufs/IDE/phpStorm-CC-Helpers-master/CodeIgniter" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://E:/TechStufs/IDE/phpStorm-CC-Helpers-master/CodeIgniter/my_models.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://E:/TechStufs/IDE/phpStorm-CC-Helpers-master/CodeIgniter/CI_phpStorm.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://E:/TechStufs/IDE/phpStorm-CC-Helpers-master/CodeIgniter/DB_active_rec.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/.idea" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/.idea/.name" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/scopes" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/.idea/scopes/scope_settings.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/.idea/vcs.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/misc.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/modules.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/project.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/encodings.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/.idea/workspace.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/assets" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-icons_0078ae_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-icons_056b93_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-icons_d8e7f3_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-icons_e0fdff_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-icons_f5e175_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-icons_f7a50d_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-icons_fcd113_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_flat_55_999999_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_flat_75_aaaaaa_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_glass_45_0078ae_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_glass_55_f8da4e_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_glass_75_79c9ec_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_inset-hard_100_fcfdfd_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_gloss-wave_45_e14f1c_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_gloss-wave_50_6eac2c_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/start/ui-bg_gloss-wave_75_2191c0_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-icons_3d3d3d_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-icons_bd7b00_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-icons_d19405_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-icons_eb990f_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-icons_ed9f26_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-icons_fadc7a_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-icons_ffe180_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_flat_30_cccccc_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_flat_50_5c5c5c_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_inset-soft_30_ffffff_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_gloss-wave_45_817865_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_gloss-wave_60_fece2f_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_gloss-wave_70_ffdd57_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_gloss-wave_90_fff9e5_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_highlight-soft_100_feeebd_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/sunny/ui-bg_diagonals-medium_20_d34d17_40x40.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-icons_4eb305_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-icons_72b42d_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-icons_cd0a0a_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-icons_ffffff_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_glass_55_fbf5d0_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_inset-soft_10_285c00_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_diagonals-small_0_aaaaaa_40x40.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_highlight-hard_30_285c00_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_highlight-soft_33_3a8104_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_highlight-soft_50_4eb305_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_highlight-soft_60_4ca20b_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_diagonals-thick_15_444444_40x40.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/le-frog/ui-bg_diagonals-thick_95_ffdc2e_40x40.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-icons_217bc0_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-icons_2e83ff_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-icons_469bdd_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-icons_6da8d5_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-icons_cd0a0a_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-icons_d8e7f3_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-icons_f9bd01_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-bg_flat_0_aaaaaa_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-bg_flat_55_fbec88_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-bg_glass_75_d0e5f5_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-bg_glass_85_dfeffc_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-bg_glass_95_fef1ec_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-bg_inset-hard_100_f5f8f9_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-bg_inset-hard_100_fcfdfd_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/redmond/ui-bg_gloss-wave_55_5c9ccc_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-icons_222222_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-icons_4b8e0b_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-icons_a83300_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-icons_cccccc_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-icons_ffffff_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_flat_30_cccccc_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_flat_50_5c5c5c_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_glass_20_555555_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_glass_40_0078a3_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_glass_40_ffc73d_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_inset-soft_25_000000_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_inset-soft_30_f58400_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_gloss-wave_25_333333_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkness/ui-bg_highlight-soft_80_eeeeee_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-icons_3383bb_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-icons_454545_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-icons_70b2e1_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-icons_999999_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-icons_fbc856_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_flat_0_aaaaaa_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_flat_0_eeeeee_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_flat_55_c0402a_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_flat_55_eeeeee_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_glass_35_dddddd_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_glass_60_eeeeee_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_glass_100_f8f8f8_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_inset-hard_75_999999_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/overcast/ui-bg_inset-soft_50_c9c9c9_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/star.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/tick.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bootstrap" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bootstrap/glyphicons-halflings.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bootstrap/glyphicons-halflings-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/close.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-icons_222222_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-icons_228ef1_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-icons_ef8c08_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-icons_ffd27a_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-icons_ffffff_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_flat_10_000000_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_glass_65_ffffff_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_glass_100_f6f6f6_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_glass_100_fdf5ce_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_gloss-wave_35_f6a828_500x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_highlight-soft_75_ffe45c_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_diagonals-thick_18_b81900_40x40.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_diagonals-thick_20_666666_40x40.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/lightness/ui-bg_highlight-soft_100_eeeeee_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-icons_222222_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-icons_2e83ff_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-icons_454545_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-icons_888888_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-icons_cd0a0a_256x240.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-bg_flat_0_aaaaaa_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-bg_flat_75_ffffff_40x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-bg_glass_55_fbf9ee_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-bg_glass_65_ffffff_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-bg_glass_75_dadada_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-bg_glass_75_e6e6e6_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-bg_glass_95_fef1ec_1x400.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/smoothness/ui-bg_highlight-soft_75_cccccc_1x100.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bar-hue.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/icon-up.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/map-hue.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/pointer.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_black.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/arrow_top.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/backImage.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_black2.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/crosshair.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/icon-down.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/icon-left.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/arrow_left.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/icon-right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/star_hover.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/arrow_right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_darkblue.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/check_black.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/check_white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/close_white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/multi-arrow.gif" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/arrow_bottom.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/nav-arrow-up.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/red_gradient.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/track_summer.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/backgroundTop.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_blackhover.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_blueenergy.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/icon-up-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/metro-icon-up.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/star_disabled.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/track_classic.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bar-saturation.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/black_gradient.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/check_disabled.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/map-saturation.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/nav-arrow-down.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/nav-arrow-left.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/office-icon-up.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/track_darkblue.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_blackpressed.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/blackbackground.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/crosshair-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/icon-down-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/icon-left-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/metro-icon-down.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/metro-icon-left.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/nav-arrow-right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/rangebar_summer.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_darkbluehover.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/darkred_gradient.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/icon-right-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/metro-icon-right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/office-icon-down.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/office-icon-left.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/rangebar_classic.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/roundbg_disabled.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/track_shinyblack.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/office-icon-right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/rangebar_darkblue.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_darkbluepressed.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_black_horizontal.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/metro-icon-up-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/rangebar_shinyblack.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/roundbg_check_black.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/roundbg_check_white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/metro-icon-down-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/metro-icon-left-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/roundbg_classic_hover.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/map-saturation-overlay.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/metro-icon-right-white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/roundbg_check_disabled.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/roundbg_classic_normal.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_blackhover_horizontal.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/check_indeterminate_black.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/check_indeterminate_white.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/bg_blackpressed_horizontal.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/roundbg_check_indeterminate.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/images/check_indeterminate_disabled.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.web.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.base.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.black.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.fresh.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.metro.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.office.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.summer.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.classic.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.darkblue.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.ui-start.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.ui-sunny.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.bootstrap.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.energyblue.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.shinyblack.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.ui-le-frog.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.ui-redmond.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.ui-darkness.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.ui-overcast.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.highcontrast.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.ui-lightness.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/styles/jqx.ui-smoothness.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/drag.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/loader.gif" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/loader2.gif" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/loader3.gif" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/sortasc.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/loader_2.gif" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/sortdesc.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/dragcancel.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/menubutton.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/sortremove.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/filter_dark.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/red_arrow_up.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/filter_large_.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/sortascbutton.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/red_arrow_down.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/resources/sortdescbutton.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqx-all.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxcore.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxdata.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxmenu.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxtabs.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxtree.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxchart.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgauge.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxinput.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxpanel.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxtouch.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxrating.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxslider.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxwindow.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/ReadMe.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.global.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.hr.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.cs-CZ.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.de-DE.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.en-CA.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.en-US.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.fr-FR.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.he-IL.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.it-IT.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.ja-JP.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.ru-RU.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/jquery.glob.sa-IN.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.lt.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.cs-CZ.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.de-DE.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.en-CA.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.en-US.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.fr-FR.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.he-IL.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.hr-HR.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.hu-HU.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.it-IT.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.ja-JP.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.ru-RU.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/globalization/globalize.culture.sa-IN.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxbuttons.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxdocking.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxlistbox.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxtooltip.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxcalendar.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxcheckbox.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxcombobox.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxdragdrop.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxexpander.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxknockout.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxlistmenu.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxsplitter.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxdockpanel.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.edit.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.sort.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxscrollbar.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxvalidator.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.pager.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxscrollview.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxbuttongroup.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxcolorpicker.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxdata.export.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.export.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.filter.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxmaskedinput.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxnumberinput.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxprogressbar.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxradiobutton.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxdropdownlist.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.storage.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxswitchbutton.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxdatetimeinput.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.grouping.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxnavigationbar.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxdropdownbutton.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.selection.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.aggregates.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.columnsresize.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/assets/jqwidgets/jqxgrid.columnsreorder.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/assets/backbone.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/system" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/system/core" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/system/core/URI.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Utf8.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Hooks.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Input.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Model.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Common.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Config.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Loader.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Output.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Router.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Security.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Benchmark.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Controller.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/Exceptions.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/core/CodeIgniter.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/system/fonts" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/system/fonts/texb.ttf" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/fonts/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/system/helpers" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/url_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/xml_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/date_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/file_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/form_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/html_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/path_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/text_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/array_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/email_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/cookie_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/number_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/smiley_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/string_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/captcha_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/download_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/language_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/security_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/directory_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/inflector_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/helpers/typography_helper.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/system/database" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/system/database/DB.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/database/drivers" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/pdo" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/pdo/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/pdo/pdo_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/pdo/pdo_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/pdo/pdo_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/pdo/pdo_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/oci8" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/oci8/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/oci8/oci8_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/oci8/oci8_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/oci8/oci8_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/oci8/oci8_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/odbc" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/odbc/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/odbc/odbc_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/odbc/odbc_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/odbc/odbc_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/odbc/odbc_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mssql" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mssql/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mssql/mssql_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mssql/mssql_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mssql/mssql_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mssql/mssql_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysql" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysql/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysql/mysql_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysql/mysql_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysql/mysql_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysql/mysql_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/cubrid" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/cubrid/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysqli" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysqli/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlite" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlite/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlsrv" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlsrv/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/postgre" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/postgre/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/postgre/postgre_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/postgre/postgre_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/postgre/postgre_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/postgre/postgre_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/database/drivers/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/system/database/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/database/DB_cache.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/database/DB_forge.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/database/DB_driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/database/DB_result.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/database/DB_utility.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/database/DB_active_rec.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/system/language" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/system/language/english" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/db_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/ftp_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/date_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/email_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/imglib_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/number_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/upload_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/calendar_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/profiler_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/migration_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/unit_test_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/system/language/english/form_validation_lang.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/system/language/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/system/.htaccess" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/system/libraries" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Cache" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/system/libraries/Cache/drivers" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_apc.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_file.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_dummy.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_memcached.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/system/libraries/Cache/Cache.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Ftp.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Log.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Zip.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Cart.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Sha1.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Email.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Table.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Driver.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/javascript" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/system/libraries/javascript/Jquery.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Parser.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Upload.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Xmlrpc.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Encrypt.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Session.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Xmlrpcs.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Calendar.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Profiler.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Image_lib.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Migration.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Trackback.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Unit_test.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Javascript.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Pagination.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Typography.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/User_agent.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/system/libraries/Form_validation.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/system/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/log.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.htaccess" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/index.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/nbproject" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/nbproject/private" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/nbproject/private/private.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/nbproject/private/config.properties" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/nbproject/private/private.properties" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/nbproject/project.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/nbproject/project.properties" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/server.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/application" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/application/core" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/core/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/logs" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/logs/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/logs/log-2013-04-28.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/cache" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/cache/.htaccess" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/cache/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/hooks" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/hooks/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/views" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/views/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/views/setting.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/views/welcome_message.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/config" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/config/rest.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/hooks.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/mimes.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/config.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/routes.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/smileys.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/autoload.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/database.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/doctypes.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/profiler.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/constants.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/migration.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/user_agents.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/config/foreign_chars.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/errors" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/errors/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/errors/error_db.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/errors/error_404.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/errors/error_php.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/errors/error_general.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/models" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/models/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/models/centers.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/models/m_gpsdata.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/models/tmpavlsetting.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/helpers" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/helpers/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/language" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/language/english" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/application/language/english/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/.htaccess" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/application/libraries" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/libraries/Format.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/libraries/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/libraries/Gpsdata.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/libraries/REST_Controller.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/application/controllers" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/controllers/key.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/controllers/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/controllers/server.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/controllers/example.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/controllers/service.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/controllers/setting.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/application/controllers/welcome.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/application/third_party" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/application/third_party/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/backboneLearn" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/app_new.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/jquery.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/app.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/backbone.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/backgrid.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/underscore.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/jquery.cookie.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/jquery.dcdrilldown.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js/jquery.dcdrilldown.1.2.min.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/backboneLearn/js" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/bg_sub.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/bg_grey.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/bg_black.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/bg_clean.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/checkers.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/bg_grey_on.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_black.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/bg_black_on.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/bg_clean_on.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/icon_arrows.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/bg_green_blue.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_down_off.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_red_left.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_red_right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_right_off.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_black_down.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_grey_right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_white_left.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_black_right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/images/arrow_white_right.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/blue.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/demo.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/grey.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/skins/graphite.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/screen.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/backgrid.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="file://$PROJECT_DIR$/backboneLearn/css/dcdrilldown.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/backboneLearn/img" module="project" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <favorite_root url="file://$PROJECT_DIR$/backboneLearn/index.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/backboneLearn/gpsdata.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+        </favorite_root>
+      </favorite_root>
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="m_vehicle_status.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/m_vehicle_status.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="45" selection-start="597" selection-end="597" vertical-scroll-proportion="0.23459245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gpsdata.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/libraries/Gpsdata.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="25" selection-start="2138" selection-end="2138" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/server.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="16" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m_avl.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/m_avl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="5" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m_vehicles.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/m_vehicles.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="130" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m_order.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/m_order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="134" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="service.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/service.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="28" selection-start="3445" selection-end="3445" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backboneLearn/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="144" column="25" selection-start="4755" selection-end="4755" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m_gpsdata.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/m_gpsdata.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app_new.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backboneLearn/js/app_new.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="406" column="47" selection-start="12552" selection-end="12552" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/application/models/vehicle_incident.php" />
+        <option value="$PROJECT_DIR$/application/libraries/Gpsdata.php" />
+        <option value="$PROJECT_DIR$/application/controllers/welcome.php" />
+        <option value="$PROJECT_DIR$/application/models/m_incident.php" />
+        <option value="$PROJECT_DIR$/features.txt" />
+        <option value="E:/TechStufs/IDE/phpStorm-CC-Helpers-master/CodeIgniter/my_models.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/application/models/m_vehicle_status.php" />
+        <option value="$PROJECT_DIR$/application/models/m_vehicle_incident.php" />
+        <option value="$PROJECT_DIR$/application/controllers/service.php" />
+        <option value="$PROJECT_DIR$/application/models/m_avl.php" />
+        <option value="$PROJECT_DIR$/application/models/m_vehicles.php" />
+        <option value="$PROJECT_DIR$/application/models/m_order.php" />
+        <option value="$PROJECT_DIR$/application/controllers/server.php" />
+        <option value="$PROJECT_DIR$/backboneLearn/index.php" />
+        <option value="$PROJECT_DIR$/backboneLearn/js/app_new.js" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.31583333" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig" serverName="Shadeland" serverId="5746e4fe-a253-4661-8e97-c9339fd93614" autoUpload="true" uploadOnSaveAll="true">
+    <servers>
+      <server id="5746e4fe-a253-4661-8e97-c9339fd93614">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workshop\GPS\project\application\models" />
+      <recent name="E:\Workshop\GPS\project\backboneLearn\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workshop\GPS\project\backboneLearn\css" />
+      <recent name="E:\Workshop\GPS\project\backboneLearn\js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.gpsdata.html">
+    <configuration default="false" name="gpsdata.html" type="JavascriptDebugSession" factoryName="Local" singleton="true" temporary="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" value="file:///E:/Workshop/GPS/project/backboneLearn/gpsdata.html" />
+      </JSDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="5746e4fe-a253-4661-8e97-c9339fd93614" server_name="Shadeland">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.gpsdata.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.gpsdata.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d397bd27-b1dc-4dc6-95fd-5d8ba6dace50" name="Default" comment="" />
+      <created>1367418600189</created>
+      <updated>1367418600189</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2530303" sideWeight="0.67232597" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36060607" sideWeight="0.67402375" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39898133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67232597" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="259" y="326" width="401" height="250" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32597622" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32809773" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67232597" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39898133" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="16" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://E:/TechStufs/IDE/phpStorm-CC-Helpers-master/CodeIgniter/my_models.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="2" selection-start="271" selection-end="271" vertical-scroll-proportion="0.37988827" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="42" selection-start="753" selection-end="753" vertical-scroll-proportion="0.5251397" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="86.30769" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/rest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="1.9615384" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="32" selection-start="6308" selection-end="6308" vertical-scroll-proportion="-14.115385" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_avl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="5" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_vehicle_incident.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="84" selection-start="786" selection-end="786" vertical-scroll-proportion="0.6759443" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_vehicles.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="130" selection-start="1641" selection-end="1641" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="134" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backboneLearn/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="25" selection-start="4755" selection-end="4755" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_gpsdata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="16" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="28" selection-start="3445" selection-end="3445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/Gpsdata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="25" selection-start="2138" selection-end="2138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_vehicle_status.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="45" selection-start="597" selection-end="597" vertical-scroll-proportion="0.23459245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backboneLearn/js/app_new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="406" column="47" selection-start="12552" selection-end="12552" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
