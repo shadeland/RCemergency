@@ -14,12 +14,13 @@ class M_gpsdata extends CI_Model {
         $this->db->set('submitdate',date("Y-m-d H:i:s"));
         $this->db->insert('gps_data');
          //check status Depended On Out put Data
-         //O1 = 0 free
-         //O1 = 1 not Free
-         //O2 = 0 out Mission
-         //O2 = 1 in Mission
-         //O3 = 0
-         //03 = 1
+         //O1=0 You doesnt have any order
+         //O1=1 You Have Order
+         //I2=0 I'm not In mission
+         //I2=1 I'm In Mission
+         //I1=0 i'm switched Off
+         //I1=0 i'm Switched On
+         // When We receive an I1=0 and and if previous status was I1=1 we should set O1=0;
          $this->load->library('gpsdata');
         $status= $this->gpsdata->parseStatus($array);//Parse Stattus From Data
          $this->load->model('m_vehicle_status');
