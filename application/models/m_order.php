@@ -34,9 +34,7 @@ class M_order extends CI_Model {
     function makeSended($orderID){
         $this->db->set('send_date',date('Y-m-d H:i:s'))->where('ID',$orderID)->update('order');
     }
-    function cancelOrder(){
 
-    }
 
     /**
      * send order to output
@@ -46,6 +44,15 @@ class M_order extends CI_Model {
         $order=self::getOrder($orderID);
         self::makeSended($orderID);
         return $order;
+
+    }
+
+    /**
+     * Cancel ORDER
+     * IF OrderID Not Set It Will Cancel Last Order
+     * @param string $orderID
+     */
+    function cancelOrder($orderID=""){
 
     }
     
