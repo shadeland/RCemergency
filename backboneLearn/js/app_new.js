@@ -71,27 +71,60 @@ app.listView = Backbone.View.extend({
 });
 app.map = {};
 
-
+/**
+ * Map View
+ * With Option :mapType:"osm" for street map ,default is google.map
+ * @type {*}
+ */
 app.map.view= Backbone.View.extend({
    el : "#map",
-    initialize : function(){
-        this.map = new OpenLayers.Map("map",{
-            units:"dd",
-            projection: new OpenLayers.Projection("EPSG:900913"),
-            displayProjection: new OpenLayers.Projection("EPSG:4326"),
-            controls: [
-                new OpenLayers.Control.Navigation({
-                    dragPanOptions: {
-                        enableKinetic: true
-                    }
-                }),
-                new OpenLayers.Control.PanZoom(),
-                new OpenLayers.Control.Attribution(),
-                new OpenLayers.Control.LayerSwitcher(),
-                new OpenLayers.Control.MousePosition()
-            ]
+    initialize : function(options){
+        if(!_.isUndefined(options.mapType) && options.mapType=="osm"){
+            this.map = new OpenLayers.Map("map",{
+                units:"dd",
+                projection: new OpenLayers.Projection("EPSG:900913"),
+                displayProjection: new OpenLayers.Projection("EPSG:4326"),
+                controls: [
+                    new OpenLayers.Control.Navigation({
+                        dragPanOptions: {
+                            enableKinetic: true
+                        }
+                    }),
+                    new OpenLayers.Control.PanZoom(),
+                    new OpenLayers.Control.Attribution(),
+                    new OpenLayers.Control.LayerSwitcher(),
+                    new OpenLayers.Control.MousePosition()
+                ]
 
-        });
+
+            });
+            var layer = new OpenLayers.Layer.OSM("OpenStreetMap");
+            this.map.addLayer(layer);
+        }else{
+            this.map = new OpenLayers.Map("map",{
+                units:"dd",
+                projection: new OpenLayers.Projection("EPSG:900913"),
+                displayProjection: new OpenLayers.Projection("EPSG:4326"),
+                controls: [
+                    new OpenLayers.Control.Navigation({
+                        dragPanOptions: {
+                            enableKinetic: true
+                        }
+                    }),
+                    new OpenLayers.Control.PanZoom(),
+                    new OpenLayers.Control.Attribution(),
+                    new OpenLayers.Control.LayerSwitcher(),
+                    new OpenLayers.Control.MousePosition()
+                ]
+
+            });
+            this.googleLayer = new OpenLayers.Layer.Google("Google Streets",{sphericalMercator: true },{
+
+
+            });
+            this.map.addLayer(this.googleLayer);
+        }
+
         app.map.mapObj=this.map;
         app.map.markersLayer= new OpenLayers.Layer.Vector("Features");
         app.map.featureSelect= new OpenLayers.Control.SelectFeature(app.map.markersLayer,
@@ -104,11 +137,7 @@ app.map.view= Backbone.View.extend({
         );
         app.map.mapObj.addControl(app.map.featureSelect);
         app.map.featureSelect.activate();
-        this.googleLayer = new OpenLayers.Layer.Google("Google Streets",{sphericalMercator: true },{
 
-
-        });
-        this.map.addLayer(this.googleLayer);
 
         //Config The Map And Layers
         this.map.setCenter(new OpenLayers.LonLat(34, 54).transform(this.map.displayProjection, this.map.projection),15);
@@ -772,7 +801,7 @@ app.incident.response.orderRequest=Backbone.Model.extend({
 }
 app.render = function (){
 
-    var mapView = new app.map.view();
+    var mapView = new app.map.view({mapType:"osm"});
     var vehcileListView= new app.vehicle.listView();
 
     app.map.infoBox=new app.map.infoView();
