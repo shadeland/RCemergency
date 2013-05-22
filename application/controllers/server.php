@@ -39,7 +39,7 @@ class Server extends CI_Controller {
             $orderID=$this->m_order->hasOrder($vehicleID);
 //            print_r($orderID);
             if($orderID){
-                $response="@gprs;02=1;";
+                $response="@gprs;O1=1;";
                 $this->m_order->makeSended($orderID);
             }else {
                 $response="#ACK;";

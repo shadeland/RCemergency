@@ -23,9 +23,11 @@ class Welcome extends CI_Controller {
         ini_set('display_errors', TRUE);
 //        $this->load->library('gpsdata');
 //        $this->gpsdata->parseStatus();
-        $this->load->model('m_vehicle_incident');
-       print_r($this->m_vehicle_incident->findVehiclesForIncident(34,'1'));
+//        $this->load->model('m_vehicle_incident');
+//       print_r($this->m_vehicle_incident->findVehiclesForIncident(34,'1'));
 //		$this->load->view('welcome_message');
+        $this->load->library('jalaliDate');
+       echo $this->jalalidate->mds_date("Y/m/d", "now", 1);
 	}
 }
 
