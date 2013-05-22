@@ -14,7 +14,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="js/underscore.js"></script>
     <script src="js/backbone.js"></script>
-<!--    <script type="text/javascript" src="../assets/jqwidgets/jqxcore.js"></script>-->
+    <script type="text/javascript" src="../assets/jqwidgets/jqxcore.js"></script>
 
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false"></script>

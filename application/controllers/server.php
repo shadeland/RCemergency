@@ -42,7 +42,7 @@ class Server extends CI_Controller {
                 $response="@gprs;O1=1;";
                 $this->m_order->makeSended($orderID);
             }else {
-                $response="#ACK;";
+                $response="?LOC;";
             }
         }else{
 
