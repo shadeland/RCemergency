@@ -689,6 +689,9 @@ app.incident.formView=Backbone.View.extend({
 });
 app.incident.infoView =  Backbone.View.extend({
     el:$('#incident_info_box'),
+    events:{
+        "change input":"search"
+    },
     initialize:function(){
         this.sugCollection=app.incident.suggestion.collectionObj;
         this.$el.hide();
@@ -696,6 +699,7 @@ app.incident.infoView =  Backbone.View.extend({
         this.$el.draggable();
         this.listenTo(this.sugCollection,"sync",this.renderSug,this);
         this.listenTo(this.sugCollection,"error",this.noResult,this);
+        this.listenTo(this.sugCollection,"remove",this.removingItems,this);
     },
     showBox:function(model){
 
@@ -705,15 +709,28 @@ app.incident.infoView =  Backbone.View.extend({
         this.template= _.template($('#incidnet_info_table_template').html());
         this.$el.show();
         this.$el.find('#info').html(this.template(this.model.toJSON()));
-        //TODO : level 1 Get rid of this sleepless shits :
-        this.sugCollection.reset();
-        this.sugCollection.fetch({url:"/index.php/service/vehiclesSuggestion.json/incident/"+this.model.get('ID')+"/distance/1000",reset:true});
+
+        this.search()
+    },
+    search:function(){
+        var filter=this.checkBox();
+        this.sugCollection.remove(this.sugCollection.models);
+        this.sugCollection.fetch({url:"/index.php/service/vehiclesSuggestion.json/incident/"+this.model.get('ID')+"/distance/1000/status/"+filter,reset:true});
 
 
     },
+    checkBox:function(){
+      var filter="";
+        this.$el.find('input:checked').each(function(){
+          filter += $(this).val();
+          console.log(filter);
+
+      })
+        return filter;
+    },
     renderSug:function(e){
         console.log(this.sugCollection);
-
+        this.$el.find('.alert').remove();
 
 
         _.each(this.sugCollection.models,function(item){
@@ -724,8 +741,12 @@ app.incident.infoView =  Backbone.View.extend({
     },
     noResult:function(e){
         console.log('error');
+        this.$el.find('.alert').remove();
         this.$el.find('#response').append("<div class='alert'>هیچ خودرویی برای پیشنهاد وجود ندارد</div> ");
         return false;
+    },
+    removingItems:function(model,collection){
+        model.trigger("imRemoved");
     },
     hideBox:function(){
         delete this.template;
@@ -733,6 +754,7 @@ app.incident.infoView =  Backbone.View.extend({
         this.$el.find('#response').html("");
 
     }
+
 })
 
 
@@ -749,7 +771,7 @@ app.incident.suggestion.itemView=Backbone.View.extend({
         _.bindAll(this);
         this.incidentModel=options.incidentModel;
         this.$el.on("click",this.findMarker);
-
+        this.model.on("imRemoved",this.suicide)
     },
     events:{
         "click a.btn" : "request"
@@ -772,6 +794,9 @@ app.incident.suggestion.itemView=Backbone.View.extend({
     render:function(){
         this.$el.html(this.template(this.model.toJSON()));
         return this
+    },
+    suicide:function(){
+        this.remove();
     }
 })
 //incident Ordering to Vehicle

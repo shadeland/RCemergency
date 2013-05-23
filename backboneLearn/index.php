@@ -84,7 +84,19 @@
     </ul>
    <div class="tab-content">
        <div class="tab-pane active" id="info"></div>
-       <div class="tab-pane" id="response"></div>
+       <div class="tab-pane" id="response">
+           <div class="clear-fix">
+               <label class="checkbox inline">
+                   <input type="checkbox" id="inlineCheckbox1" value="0">ماشین خاموش
+               </label>
+               <label class="checkbox inline">
+                   <input type="checkbox" id="inlineCheckbox2" value="3"> در ماموریت
+               </label>
+               <label class="checkbox inline">
+                   <input type="checkbox" id="inlineCheckbox3" value="5"> در انتظار پاسخ
+               </label>
+           </div>
+       </div>
 
    </div>
 </div>

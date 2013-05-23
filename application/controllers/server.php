@@ -23,7 +23,7 @@ class Server extends CI_Controller {
     public function index() {
         error_reporting(-1);
         ini_set('display_errors', TRUE);
-        $response="@gprs;";
+
 //       TODO : Shadel Validate Get Data
         $this->load->model("tmpavlsetting");
         $this->load->model("m_gpsdata");

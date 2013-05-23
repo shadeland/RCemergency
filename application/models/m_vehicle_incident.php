@@ -5,7 +5,15 @@ class M_vehicle_incident extends CI_Model {
     {
         parent::__construct();
     }
-    function findVehiclesForIncident($incident,$status,$distance=""){
+
+    /**
+     * 10 does'nt mean no status it means 024
+     * @param $incident
+     * @param string $status
+     * @param string $distance
+     * @return mixed
+     */
+    function findVehiclesForIncident($incident,$status="",$distance=""){
         if($distance==""){
             $distance=50;
         }
@@ -14,6 +22,7 @@ class M_vehicle_incident extends CI_Model {
         $incidnet=$this->m_incident->getIncident($incident);
 //        print_r($incidnet);
             $this->load->model("m_vehicles");
+
         $vehicles=$this->m_vehicles->getVehicleWithStatus($status);
         $result=array();
         $distances=array();
@@ -48,7 +57,7 @@ class M_vehicle_incident extends CI_Model {
         $orderData['incident_ID']=$incidentID;
         $orderID=$this->m_order->createOrder($orderData);
         //Change Vehicle Status
-        $this->m_vehicle_status->updateStatus(array('vehicleID' => $vehicleID ,'statusID'=>1));
+        //$this->m_vehicle_status->updateStatus(array('vehicleID' => $vehicleID ,'statusID'=>1));
         return $orderID;
     }
     function removeVehicle($vehicleID,$incident){

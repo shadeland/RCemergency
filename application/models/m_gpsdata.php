@@ -4,6 +4,7 @@ class M_gpsdata extends CI_Model {
     function __construct()
     {
         parent::__construct();
+        $this->load->config('gps_config');
     }
 
      function insertData($array){
@@ -22,7 +23,8 @@ class M_gpsdata extends CI_Model {
          //I1=0 i'm Switched On
          // When We receive an I1=0 and and if previous status was I1=1 we should set O1=0;
          $this->load->library('gpsdata');
-        $status= $this->gpsdata->parseStatus($array);//Parse Stattus From Data
+        $status= self::parseStatus($array);//Parse Stattus From Data somthing like "1256"
+
          $this->load->model('m_vehicle_status');
          $statusData=array('vehicleID'=>self::getVehicle($array),'statusID'=>$status);
          $this->m_vehicle_status->updateStatus($statusData);//Update Status
@@ -52,6 +54,18 @@ class M_gpsdata extends CI_Model {
     }
     function getLastPosition($SID){
         return $this->db->where("SID",$SID)->LIMIT(1)->ORDER_BY('recivedate','desc')->get('gpd_data');
+    }
+    function parseStatus($data){
+        $ref=$this->config->item('device-status-value');
+        $status="";
+        foreach($ref as $key=>$value){
+
+
+                $status .= $value[$data[$key]];;
+
+
+        }
+        return $status;
     }
     
    

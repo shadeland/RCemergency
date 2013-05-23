@@ -97,7 +97,9 @@ class service extends REST_Controller
         $this->load->model('m_vehicle_incident');
         $incident=$this->get('incident');
         $distance=$this->get('distance');
-        $data=$this->m_vehicle_incident->findVehiclesForIncident($incident,"0",$distance);
+        $status=$this->get('status');
+
+        $data=$this->m_vehicle_incident->findVehiclesForIncident($incident,$status,$distance);
         if(count($data)==0){
             $this->response(null,404);
         }

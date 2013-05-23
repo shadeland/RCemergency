@@ -45,7 +45,8 @@ class M_vehicles extends CI_Model {
     }
     function getVehicleWithStatus($statusID,$output=""){
 
-        $data= $this->db->query("SELECT vehicle.ID from vehicle where vehicle.ID in (select vehicle_ID from vehicle_status where status_ID=? AND validity=1)",array($statusID))->result_array();
+        $data= $this->db->query("SELECT vehicle.ID from vehicle where vehicle.ID in (select vehicle_ID from vehicle_status where ".self::statusHelper($statusID)." validity=1)")->result_array();
+//        echo $this->db->last_query();
         if($output==""){
             return $data;
         }else{
@@ -59,6 +60,26 @@ class M_vehicles extends CI_Model {
        return $this->gpsdata->calcDistance($position['lat'],$position['lon'],$vposition['lat'],$vposition['lng']);
 
 
+    }
+    function statusHelper($statusID){
+
+        $filter = array();
+        if (strpos($statusID,"0")===FALSE){
+           array_push($filter," status_ID LIKE '1%' ");
+        }
+        if (strpos($statusID,"3")===FALSE){
+             array_push($filter," status_ID LIKE '%2%' ");
+        }
+        if (strpos($statusID,'5')===FALSE){
+//           echo $statusID;
+            array_push($filter,"  status_ID LIKE '%4%' ");
+
+        }
+       $res="";
+        foreach($filter as $fil){
+            $res .= $fil." AND ";
+        }
+        return $res;
     }
    /*
     * usefull query ::

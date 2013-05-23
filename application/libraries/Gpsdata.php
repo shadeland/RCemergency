@@ -32,24 +32,7 @@ class Gpsdata {
         $date->setTimezone(new \DateTimezone('Asia/Tehran'));
         return $date->format("Y-m-d H:i:s");
     }
-    function parseStatus($data=""){
-//        print_r($data);
-        $ref=array();
 
-        $ref['output1']['1']="0";
-
-        $ref['output2']['1']="1";
-
-        $ref['output3']['1']="2";
-//        print_r($ref);
-        foreach($ref as $key => $value){
-            if($data[$key]=="1"){
-                return $ref[$key]['1'];
-            }
-
-        }
-
-    }
     function calcDistance($lat1,$lon1,$lat2,$lon2){
         $r=6378;
         $pi=atan2(1,1) * 4;
