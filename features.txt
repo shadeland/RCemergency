@@ -25,6 +25,27 @@ IMPORTANT ::::::::::::::
   vehicle.position.distanceTo(position) is
   getDistance(vehicle.position,position);
 
+# Ordering And Suggestion
+    we gonna list all vehicle with selected Statement :
+        if ( has Order ):
+            show Order In List With Cancel button !/it not possible for a vehicle to have multiple Orders
+        else:
+            order will insert in queue .
+        When Device Connected :
+         if(input2 ==1 || output1==1 &&  has order )
+            We Will Wait ;
+         if ( input2 == 0 && output1 ==0  has order)
+            we will set output1 to 1 ;
+         if ( input2 == 1 && output1 == 1 )
+            we will set output1 to 0 ;
+
+
+
+
+
+
 
  :: TODOS::
  should find better implement for objects to prevent to many db requests !
+
+

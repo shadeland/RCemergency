@@ -49,7 +49,7 @@
 <div id="vehicle_list" class="overlay_list" style=" display: block;">
     <input type="text" id="vechicle_search" placeholder="جستجو"   />
     <div id="list">
-        <ul>
+        <ul class="unstyled">
 
         </ul>
     </div>
@@ -288,13 +288,19 @@
 
 </script>
 <script type="text/x-underscore-template" id="vehicle_item_template">
-    <div class="vehicle_item">
+    <div class="vehicle_item ">
 
         <a href="#"><%= name %></a>
         <span class="vehicle-type"><%= type %></span>
-        <button class="addMarker" >+</button>
-        <button class="removeMarker">-</button>
-        <button class="refreshModel">O</button>
+        <% if (!_.isNull(order)){ %>
+            <span class="label label-warning">در انتظار پاسخ</span>
+        <%}%>
+        <% if (status.status_ID=="1246"){ %>
+            <span class="label label-success ">آزاد</span>
+        <%}%>
+        <% if (status.status_ID=="1346" || status.status_ID=="1356" ){ %>
+            <span class="label label-important">در حال ماموریت</span>
+        <%}%>
 
     </div>
 

@@ -25,11 +25,13 @@ class Server extends CI_Controller {
         ini_set('display_errors', TRUE);
 
 //       TODO : Shadel Validate Get Data
+        $this->load->config('gps_config');
         $this->load->model("tmpavlsetting");
         $this->load->model("m_gpsdata");
         $this->load->library('gpsdata');
         $data = $this->gpsdata->parseGetData($_GET);
         if ($data) {
+            // Look at features file !
             //FIND ORDER FOR DEVICE AND MAKE THEM SENDED
             $this->m_gpsdata->insertData($data);
             $this->load->model('m_vehicles');
@@ -37,12 +39,15 @@ class Server extends CI_Controller {
 //            print_r($vehicleID);
             $this->load->model('m_order');
             $orderID=$this->m_order->hasOrder($vehicleID);
-//            print_r($orderID);
-            if($orderID){
+            $response="#ACK;"; //Default Response If We have Nothing To Do
+            if($data['input2']== "1" || $data['output1']=="1"){//in Mission Or Has Informed
+                //Do Nothing
+            }elseif($data['input2']== "0" && $data['output1']=="0" && $orderID ){//Not In Mission ,Not Informed And Has Order
                 $response="@gprs;O1=1;";
-                $this->m_order->makeSended($orderID);
-            }else {
-                $response="?LOC;";
+                $this->m_order->makeSended($orderID);//Push Order Out of queue
+            }
+            if($data['input2']=="1" && $data['output1']=="1"){//In Mission And Informed Before
+                $response="@gprs;O1=0"; //set output1 to 0 to turn off the notifier
             }
         }else{
 

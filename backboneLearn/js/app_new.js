@@ -301,7 +301,8 @@ app.vehicle.model = Backbone.Model.extend({
         return  "/index.php/service/vehicle.json/vehicleID/"+this.get("ID")+"/format/json";
     },
     defaults:{
-        type:"ambulance"
+        type:"ambulance",
+        order:null,
     },
     initialize:function(){
       this.bind('sync',function(){
@@ -316,6 +317,7 @@ app.vehicle.collection = Backbone.Collection.extend({
 app.vehicle.vehicleList=new app.vehicle.collection();
 app.vehicle.itemView= Backbone.View.extend({
     tagName:'li',
+    className:'vehicle-item',
     template: _.template($('#vehicle_item_template').html()),
     events:{
 
@@ -333,6 +335,7 @@ app.vehicle.itemView= Backbone.View.extend({
     },
     render:function(){
         this.$el.html(this.template(this.model.toJSON()));
+        this.addMarker({data:this});
         return this;
 
     },

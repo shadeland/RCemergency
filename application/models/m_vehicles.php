@@ -22,9 +22,15 @@ class M_vehicles extends CI_Model {
 
     }
     function sendVehicle($vehicleID){
+        $this->load->model('m_order');
         $vehicle=$this->db->select('vehicle.* , vehicle_type.type AS type')->where('vehicle.ID',$vehicleID)->join('vehicle_type','vehicle.vehicle_type_ID = vehicle_type.ID')->limit(1)->get('vehicle')->row_array();
         $vehicle['LonLat']= self::getVehiclePosition($vehicleID);
         $vehicle['status']= self::getStatus($vehicleID);
+        $orderID=$this->m_order->hasOrder($vehicleID);
+        if($orderID){
+            $vehicle['order']=$orderID;
+        }
+
         return $vehicle;
 
     }
