@@ -11,7 +11,9 @@
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
+
     <script src="js/underscore.js"></script>
     <script src="js/backbone.js"></script>
     <script type="text/javascript" src="../assets/jqwidgets/jqxcore.js"></script>
@@ -23,6 +25,9 @@
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="https://github.com/epeli/underscore.string/raw/master/dist/underscore.string.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+
     <style>
         html, body {
             width: 100%;
@@ -35,6 +40,29 @@
 
 </head>
 <body>
+<div id="vehicle-panel" class="slide-out-div">
+    <a class="handle" href="#">Content</a>
+    <div id="vehicle_list"  style=" display: block; height:50%">
+        <div class="list-header">
+            <input type="text" id="vechicle_search" placeholder="جستجو"   />
+        </div>
+
+        <div class="list-wrapper" id="list">
+            <ul class="unstyled">
+
+            </ul>
+        </div>
+    </div>
+    <div class="info-wrapper">
+        <div class="list-header">
+            <h3>اطلاعات خودرو</h3>
+        </div>
+        <div id="info_box"  style=" display: block;">
+
+        </div>
+    </div>
+
+</div>
 <div id="toolbar"  class="overlay_list" style=" display: block;">
     <ul class="unstyled">
         <button type="button" id="insert_incident" class="btn btn-primary" data-toggle="button"><i class="icon-plus-sign icon-white"></i>سانحه </button>
@@ -46,14 +74,14 @@
 
 </div>
 
-<div id="vehicle_list" class="overlay_list" style=" display: block;">
-    <input type="text" id="vechicle_search" placeholder="جستجو"   />
-    <div id="list">
-        <ul class="unstyled">
-
-        </ul>
-    </div>
-</div>
+<!--<div id="vehicle_list" class="overlay_list" style=" display: block;">-->
+<!--    <input type="text" id="vechicle_search" placeholder="جستجو"   />-->
+<!--    <div id="list">-->
+<!--        <ul class="unstyled">-->
+<!---->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</div>-->
 
 <div id="incident_list" class="overlay_list" style=" display: block;">
     <div class="handler"></div>
@@ -152,18 +180,18 @@
             </tr>
             <tr>
                 <td>وضعیت</td>
-                <td><% switch (status.status_ID){
-                        case "1":
-                            %>در ماموریت
-                    <% break;
-
-                     case "0": %>
-                    آزاد
-                    <% break;
-
-                    }
-
-                    %></td>
+                <td><% if (!_.isNull(order)){ %>
+                        <span class="label label-warning">در انتظار پاسخ</span>
+                    <%}%>
+                    <% if (status.status_ID.indexOf('1')!==-1){ %>
+                        <!--      Switched On    -->
+                    <%}else{%>
+                        <span class="label ">خاموش</span>
+                    <% } %> <% if (status.status_ID.indexOf('2')!==-1){ %>
+                        <span class="label label-success ">آزاد</span>
+                    <%}else{%>
+                        <span class="label label-important ">در ماموریت</span>
+                    <% } %></td>
 <!-- TODO : Localization -->
             </tr>
             <tr>
@@ -295,12 +323,16 @@
         <% if (!_.isNull(order)){ %>
             <span class="label label-warning">در انتظار پاسخ</span>
         <%}%>
-        <% if (status.status_ID=="1246"){ %>
+        <% if (status.status_ID.indexOf('1')!==-1){ %>
+<!--      Switched On    -->
+        <%}else{%>
+        <span class="label ">خاموش</span>
+        <% } %> <% if (status.status_ID.indexOf('2')!==-1){ %>
             <span class="label label-success ">آزاد</span>
-        <%}%>
-        <% if (status.status_ID=="1346" || status.status_ID=="1356" ){ %>
-            <span class="label label-important">در حال ماموریت</span>
-        <%}%>
+        <%}else{%>
+        <span class="label label-important ">در ماموریت</span>
+        <% } %>
+
 
     </div>
 

@@ -404,8 +404,8 @@ app.vehicle.listView=Backbone.View.extend({
     initialize:function(){
         this.listenTo(app.vehicle.vehicleList,'sync',this.render);
 
-        this.$el.parents('#vehicle_list').draggable();
-        this.$el.parents('#vehicle_list').offset({top:120,left:20});
+//        this.$el.parents('#vehicle_list').draggable();
+//        this.$el.parents('#vehicle_list').offset({top:120,left:20});
     },
     refresh:function(e){
         e.preventDefault();
@@ -430,9 +430,9 @@ app.vehicle.listView=Backbone.View.extend({
 app.map.infoView =  Backbone.View.extend({
     el:$('#info_box'),
     initialize:function(){
-        this.$el.hide();
-        this.$el.offset({top:120,left:$(window).width()-500});
-        this.$el.draggable();
+//        this.$el.hide();
+//        this.$el.offset({top:120,left:$(window).width()-500});
+//        this.$el.draggable();
     },
     showBox:function(model){
         //TODO : should inmplent for incident
@@ -828,7 +828,7 @@ app.incident.response.orderRequest=Backbone.Model.extend({
      app.incident.incidentForm.addIncident(newIncident);
 }
 app.render = function (){
-
+    app.makePanels();
     var mapView = new app.map.view({mapType:"osm"});
     var vehcileListView= new app.vehicle.listView();
 
@@ -839,9 +839,27 @@ app.render = function (){
     app.incident.listObj=new app.incident.listView();
     app.incident.infoBox=new app.incident.infoView();
 
+
+}
+app.makePanels=function(){
+    $('#vehicle-panel').tabSlideOut({
+        tabHandle: '.handle',                     //class of the element that will become your tab
+        pathToTabImage: 'img/vehicle-panel.png', //path to the image for the tab //Optionally can be set using css
+        imageHeight: '62px',                     //height of tab image           //Optionally can be set using css
+        imageWidth: '62px',                       //width of tab image            //Optionally can be set using css
+        tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
+        speed: 300,                               //speed of animation
+        action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+        topPos: '100px',                          //position from the top/ use if tabLocation is left or right
+        leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+        fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
+    });
+//    $('#vehicle-panel').resizable({handles:"sw"}) ;
+
 }
 $(document).ready(function(){
     app.render();
+
 
 
 })
