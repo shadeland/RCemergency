@@ -302,7 +302,7 @@ app.vehicle.model = Backbone.Model.extend({
     },
     defaults:{
         type:"ambulance",
-        order:null,
+        order:null
     },
     initialize:function(){
       this.bind('sync',function(){
@@ -841,7 +841,7 @@ app.render = function (){
 
 
 }
-app.makePanels=function(){
+app.makePanels = function () {
     $('#vehicle-panel').tabSlideOut({
         tabHandle: '.handle',                     //class of the element that will become your tab
         pathToTabImage: 'img/vehicle-panel.png', //path to the image for the tab //Optionally can be set using css
@@ -856,7 +856,7 @@ app.makePanels=function(){
     });
 //    $('#vehicle-panel').resizable({handles:"sw"}) ;
 
-}
+};
 $(document).ready(function(){
     app.render();
 
