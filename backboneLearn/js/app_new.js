@@ -552,20 +552,20 @@ app.incident.itemView=Backbone.View.extend({
         self.model.fetch();
     },
     selected:function(e){
-      $('.highlighted_item').removeClass('highlighted_item');
+      $('.highlighted_item-incident').removeClass('highlighted_item-incident');
       this.highlight();
       this.marker.locate();
     },
     highlight:function(){
         //We Will Know that marker Has been Selected
         console.log(this.$el);
-        $('#incident_list').find('.highlighted_item').removeClass('highlighted_item');
-        this.$el.addClass('highlighted_item');
+        $('#incident_list').find('.highlighted_item-incident').removeClass('highlighted_item');
+        this.$el.addClass('highlighted_item-incident');
     },
     unLight:function(){
         //We Will Know that marker Has been unSelected
         console.log('fromItem');
-        this.$el.removeClass('highlighted_item');
+        this.$el.removeClass('highlighted_item-incident');
     }
 });
 app.incident.markerView=Backbone.View.extend({
@@ -634,14 +634,15 @@ app.incident.listView=Backbone.View.extend({
         this.collection.fetch();
         this.collection.on('add',this.add,this);
         this.collection.on('remove',this.remove,this);
+
         this.render();
     },
     render:function(){
-        this.$el.draggable({ handle: ".handler" });
-        this.$el.offset({top:120,left:600});
+        this.$el.mCustomScrollbar();
     },
     add:function(model){
-        this.$el.find('.list_wrapper').append((new app.incident.itemView({model:model})).render().el)
+        this.$el.find('.list_wrapper').append((new app.incident.itemView({model:model})).render().el);
+        this.$el.mCustomScrollbar("update");
     },
     remove:function(model){
         model.trigger('remove');
@@ -698,11 +699,12 @@ app.incident.infoView =  Backbone.View.extend({
     initialize:function(){
         this.sugCollection=app.incident.suggestion.collectionObj;
         this.$el.hide();
-        this.$el.offset({top:120,left:$(window).width()-500});
-        this.$el.draggable();
+
         this.listenTo(this.sugCollection,"sync",this.renderSug,this);
         this.listenTo(this.sugCollection,"error",this.noResult,this);
         this.listenTo(this.sugCollection,"remove",this.removingItems,this);
+
+        this.$el.find('#incident-sug-list').mCustomScrollbar();
     },
     showBox:function(model){
 
@@ -712,7 +714,7 @@ app.incident.infoView =  Backbone.View.extend({
         this.template= _.template($('#incidnet_info_table_template').html());
         this.$el.show();
         this.$el.find('#info').html(this.template(this.model.toJSON()));
-
+        this.$el.find('#info').mCustomScrollbar();
         this.search()
     },
     search:function(){
@@ -738,14 +740,15 @@ app.incident.infoView =  Backbone.View.extend({
 
         _.each(this.sugCollection.models,function(item){
             console.log(item)
-            this.$el.find('#response').append(new app.incident.suggestion.itemView({model:item,incidentModel:this.model}).render().el);
-        },this)
+            this.$el.find('#incident-sug-list').find('#content').append(new app.incident.suggestion.itemView({model:item,incidentModel:this.model}).render().el);
+        },this);
+        this.$el.find('#incident-sug-list').mCustomScrollbar("update");
 
     },
     noResult:function(e){
         console.log('error');
         this.$el.find('.alert').remove();
-        this.$el.find('#response').append("<div class='alert'>هیچ خودرویی برای پیشنهاد وجود ندارد</div> ");
+        this.$el.find('#incident-sug-list').find('#content').append("<div class='alert'>هیچ خودرویی برای پیشنهاد وجود ندارد</div> ");
         return false;
     },
     removingItems:function(model,collection){
@@ -754,7 +757,8 @@ app.incident.infoView =  Backbone.View.extend({
     hideBox:function(){
         delete this.template;
         this.$el.hide();
-        this.$el.find('#response').html("");
+//        this.$el.find('#response').html("");
+        this.$el.find('#info').mCustomScrollbar("destroy");
 
     }
 
@@ -770,6 +774,8 @@ app.incident.suggestion.collection=Backbone.Collection.extend({
 app.incident.suggestion.collectionObj=new app.incident.suggestion.collection();
 app.incident.suggestion.itemView=Backbone.View.extend({
     template: _.template($('#suggestion_item_template').html()),
+    tagName:'li',
+    className:'vehicle-item',
     initialize:function(options){
         _.bindAll(this);
         this.incidentModel=options.incidentModel;
@@ -777,7 +783,7 @@ app.incident.suggestion.itemView=Backbone.View.extend({
         this.model.on("imRemoved",this.suicide)
     },
     events:{
-        "click a.btn" : "request"
+        "click a#send-order" : "request"
     },
     request:function(){
         this.requestModel=new app.incident.response.orderRequest();
@@ -854,6 +860,19 @@ app.makePanels = function () {
         leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
         fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
     });
+    $('#incident-panel').tabSlideOut({
+        tabHandle: '.handle2',                     //class of the element that will become your tab
+        pathToTabImage: 'img/incident-panel.png', //path to the image for the tab //Optionally can be set using css
+        imageHeight: '62px',                     //height of tab image           //Optionally can be set using css
+        imageWidth: '62px',                       //width of tab image            //Optionally can be set using css
+        tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+        speed: 300,                               //speed of animation
+        action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+        topPos: '100px',                          //position from the top/ use if tabLocation is left or right
+        leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+        fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
+    });
+
 //    $('#vehicle-panel').resizable({handles:"sw"}) ;
 
 };

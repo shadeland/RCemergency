@@ -38,9 +38,11 @@ IMPORTANT ::::::::::::::
             we will set output1 to 1 ;
          if ( input2 == 1 && output1 == 1 )
             we will set output1 to 0 ;
-
-
-
+    ToDO : Canceling queued order !
+BUG ::
+    #Position Retreive Has Problem ,sort by recieve-date
+    #Order ,And Status : when we send order to device What will happen to its status
+    #If device Send Stored Previous data do we Know?
 
 
 

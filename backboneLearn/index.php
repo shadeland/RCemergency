@@ -26,8 +26,8 @@
 
     <script type="text/javascript" src="https://github.com/epeli/underscore.string/raw/master/dist/underscore.string.min.js"></script>
     <script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
-
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link rel="stylesheet" href="js/jquery.mCustomScrollbar.css"/>
     <style>
         html, body {
             width: 100%;
@@ -63,6 +63,80 @@
     </div>
 
 </div>
+<div id="incident-panel" class="slide-out-div2">
+    <a class="handle2" href="#">Content</a>
+    <div class="panel-segment">
+        <div class="panel-segment-header">
+            <input type="text" id="incident_search" placeholder="جستجو"   />
+        </div>
+        <div class="panel-segment-content">
+            <div id="incident_list" style="height: 100%;overflow: hidden">
+
+
+                <!--    TODO : implement with accardions -->
+
+                <div class="table-wrapper"  >
+                    <table class="table table-condensed table-hover table-striped">
+                        <thead>
+                        <tr>
+                            <th>شماره</th>
+                            <th>نوع سانحه</th>
+                            <th>تاریخ ثبت</th>
+
+                        </tr>
+                        </thead>
+                        <tbody class="list_wrapper ">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-segment">
+        <div class="panel-segment-header">
+            <h4 style="padding: 0">اطلاعات سانحه</h4>
+        </div>
+        <div class="panel-segment-content">
+            <div style="position: relative;height: 100%">
+                <div class="info-content" style="top:-40px;left:0;right: 0;bottom: 0;position: absolute;">
+                    <div id="incident_info_box" style="position: relative;height: 100%">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#info">اطلاعات</a></li>
+                            <li><a href="#response">پاسخ دهی</a></li>
+                        </ul>
+                        <div class="tab-content" style="top:40px;left:0;right: 0;bottom: 0;position: absolute;">
+
+                            <div class="tab-pane active" id="info" style="height: 100%;overflow: hidden"></div>
+                            <div class="tab-pane" id="response" style="height: 100%;overflow: hidden;position: relative";>
+                                <div class="clear-fix list-filter" >
+
+                                    <label class="checkbox inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="0">ماشین خاموش
+                                    </label>
+                                    <label class="checkbox inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="3"> در ماموریت
+                                    </label>
+                                    <label class="checkbox inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="5"> در انتظار پاسخ
+                                    </label>
+                                </div>
+                                <div class="incident-sug-list " id="incident-sug-list" >
+                                    <ul id="content" class="unstyled">
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div></div>
+
+        </div>
+    </div>
+</div>
 <div id="toolbar"  class="overlay_list" style=" display: block;">
     <ul class="unstyled">
         <button type="button" id="insert_incident" class="btn btn-primary" data-toggle="button"><i class="icon-plus-sign icon-white"></i>سانحه </button>
@@ -83,60 +157,14 @@
 <!--    </div>-->
 <!--</div>-->
 
-<div id="incident_list" class="overlay_list" style=" display: block;">
-    <div class="handler"></div>
-    <input type="text" id="vechicle_search" placeholder="جستجو"   />
-<!--    TODO : implement with accardions -->
 
-    <div class="table-wrapper"  style="height:300px !important;width: 400px;overflow:scroll;">
-    <table class="table table-condensed table-hover table-striped">
-        <thead>
-           <tr>
-               <th>شماره</th>
-               <th>نوع سانحه</th>
-               <th>جزییات</th>
-               <th> امکانات</th>
-           </tr>
-        </thead>
-        <tbody class="list_wrapper ">
 
-        </tbody>
-    </table>
-    </div>
-
-</div>
-<div id="incident_info_box" class="overlay_list" style="display: block">
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#info">اطلاعات</a></li>
-        <li><a href="#response">پاسخ دهی</a></li>
-    </ul>
-   <div class="tab-content">
-       <div class="tab-pane active" id="info"></div>
-       <div class="tab-pane" id="response">
-           <div class="clear-fix">
-               <label class="checkbox inline">
-                   <input type="checkbox" id="inlineCheckbox1" value="0">ماشین خاموش
-               </label>
-               <label class="checkbox inline">
-                   <input type="checkbox" id="inlineCheckbox2" value="3"> در ماموریت
-               </label>
-               <label class="checkbox inline">
-                   <input type="checkbox" id="inlineCheckbox3" value="5"> در انتظار پاسخ
-               </label>
-           </div>
-       </div>
-
-   </div>
-</div>
 <script language="JavaScript">
     $('.nav-tabs').find('a').click(function(e){
         e.preventDefault();
         $(this).tab('show');
     })
 </script>
-<div id="info_box" class="overlay_list" style=" display: block;">
-
-</div>
     <div id="map" >
 
     </div>
@@ -191,7 +219,11 @@
                         <span class="label label-success ">آزاد</span>
                     <%}else{%>
                         <span class="label label-important ">در ماموریت</span>
-                    <% } %></td>
+                    <% } %>
+                    <% if (status.status_ID.indexOf('5')!==-1){ %>
+                        <span class="label label-success ">در انتظار پاسخ</span>
+                    <%}%>
+                </td>
 <!-- TODO : Localization -->
             </tr>
             <tr>
@@ -332,6 +364,9 @@
         <%}else{%>
         <span class="label label-important ">در ماموریت</span>
         <% } %>
+        <% if (status.status_ID.indexOf('5')!==-1){ %>
+            <span class="label label-success ">در انتظار پاسخ</span>
+        <%}%>
 
 
     </div>
@@ -340,10 +375,33 @@
 <script type="text/x-underscore-template" id="suggestion_item_template">
 
 
+    <div class="vehicle_item ">
+        <% if (!_.isNull(order)){ %>
+            <a id="cancel-order" class="btn btn-danger" style="margin-right:20px;" href="#">لفو ماموریت</a>
+        <%}else{%>
+            <a id="send-order" class="btn btn-primary" style="margin-right:20px;" href="#">انتخاب</a>
+        <%}%>
         <a href="#"><%= name %></a>
         <span class="vehicle-type"><%= type %></span>
-        <span class="vehicle-type"><%= distance %></span>
-    <a class="btn btn-primary" href="#">انتخاب</a>
+        <% if (!_.isNull(order)){ %>
+            <span class="label label-warning">در انتظار ابلاغ</span>
+        <%}%>
+        <% if (status.status_ID.indexOf('1')!==-1){ %>
+            <!--      Switched On    -->
+        <%}else{%>
+            <span class="label ">خاموش</span>
+        <% } %> <% if (status.status_ID.indexOf('2')!==-1){ %>
+            <span class="label label-success ">آزاد</span>
+        <%}else{%>
+            <span class="label label-important ">در ماموریت</span>
+        <% } %>
+        <% if (status.status_ID.indexOf('5')!==-1){ %>
+        <span class="label label-success ">در انتظار پاسخ</span>
+        <%}%>
+
+
+    </div>
+
 
 
 
@@ -353,10 +411,7 @@
         <td><%= ID %></td>
         <td><%= type %></td>
         <td><%= create_date %></td>
-    <td> <button class="addMarker" >+</button>
-        <button class="removeMarker">-</button>
-        <button class="refreshModel">O</button>
-    </td>
+
 
 
 

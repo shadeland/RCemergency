@@ -14,7 +14,8 @@ class M_avl extends CI_Model {
     }
     function getLastPosition($avlID){
         $SID=self::getSID($avlID);
-        return $this->db->where('SID',$SID)->order_by('ID','desc')->limit(1)->get('gps_data')->row_array();
+        $this->load->model('m_gpsdata');
+        return $this->m_gpsdata->getLastPosition($SID)->row_array();
     }
 
     
