@@ -50,9 +50,17 @@ class M_order extends CI_Model {
     /**
      * Cancel ORDER
      * IF OrderID Not Set It Will Cancel Last Order
+     * return true if it was successful else false
      * @param string $orderID
+     * @return boolean
      */
     function cancelOrder($orderID=""){
+        $this->db->where('ID',$orderID)->delete('order');
+        if ($this->db->affected_rows()==1){
+            return true;
+        }else{
+            return false;
+        }
 
     }
     

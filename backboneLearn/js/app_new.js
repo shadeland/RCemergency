@@ -12,7 +12,7 @@ app.listItems = Backbone.Collection.extend({
 
     },
     filter:function(filter){
-        filterurl=this.url+"/"+filter
+       var filterurl=this.url+"/"+filter
         this.fetch({url:filterurl});
     }
 
@@ -246,12 +246,12 @@ app.map.markerView=Backbone.View.extend({
 
         this.marker = new OpenLayers.Feature.Vector(point,  null,{
             externalGraphic: "img/"+that.model.get('type')+".png",
-            graphicWidth: 30,
-            graphicHeight: 48,
-            graphicYOffset: -40,
-            graphicXOffset: -18,
-            fillOpacity: 0.7,
-            label:this.model.get('LonLat').name
+            graphicWidth: 46,
+            graphicHeight: 67,
+            graphicYOffset: -67,
+            graphicXOffset: -23,
+            fillOpacity: 0.7
+
         });
         this.marker.view=this;
 
@@ -277,6 +277,10 @@ app.map.markerView=Backbone.View.extend({
         //open info box
         app.map.infoBox.showBox(this.model);
         this.itemView.highlight();
+        if(!$('.handle').parent().hasClass('open')){
+            $('.handle').click();
+        }
+
 
     },
     unselect:function(e){
@@ -305,9 +309,32 @@ app.vehicle.model = Backbone.Model.extend({
         order:null
     },
     initialize:function(){
+        _.bindAll(this);
       this.bind('sync',function(){
           console.log('foo from model');
       })
+    },
+    orderRequest:function(incidentID){
+       var that=this;
+        $.ajax({
+            url:"/index.php/service/orderrequest.json",
+            type:"post",
+            data:{vehicle:that.get('ID'),incident:incidentID}
+        }).done(function(){
+               that.trigger("orderRequested");
+                that.fetch({url:"/index.php/service/vehicle.json/vehicleID/"+that.get("ID")+"/format/json"});
+            })
+    },
+    orderCancel:function(){
+        var that=this;
+        $.ajax({
+            url:"/index.php/service/ordercancel.json",
+            type:"post",
+            data:{vehicle:that.get('ID'),order:that.get('order')}
+        }).done(function(){
+                that.trigger("orderCanceled");
+                that.set('order',null);
+            })
     }
 });
 app.vehicle.collection = Backbone.Collection.extend({
@@ -397,12 +424,13 @@ app.vehicle.itemView= Backbone.View.extend({
 })
 app.vehicle.listView=Backbone.View.extend({
 
-    el:'#vehicle_list>#list>ul',
+    el:$('#vehicle_list').find('#list>ul'),
     events:{
 
     },
     initialize:function(){
         this.listenTo(app.vehicle.vehicleList,'sync',this.render);
+        $('#vehicle_list').mCustomScrollbar();
 
 //        this.$el.parents('#vehicle_list').draggable();
 //        this.$el.parents('#vehicle_list').offset({top:120,left:20});
@@ -433,6 +461,9 @@ app.map.infoView =  Backbone.View.extend({
 //        this.$el.hide();
 //        this.$el.offset({top:120,left:$(window).width()-500});
 //        this.$el.draggable();
+        this.$el.mCustomScrollbar({advanced:{
+            updateOnContentResize: true
+        }});
     },
     showBox:function(model){
         //TODO : should inmplent for incident
@@ -444,7 +475,8 @@ app.map.infoView =  Backbone.View.extend({
         this.model=model;
         this.template= _.template($('#info_table_template').html());
         this.$el.show();
-        this.$el.html(this.template(this.model.toJSON()));
+        this.$el.find('.content').html(this.template(this.model.toJSON()));
+//        this.$el.mCustomScrollbar('update');
 
     },
     hideBox:function(){
@@ -498,7 +530,7 @@ app.incident.model=Backbone.Model.extend({
     },
     newSaved:function(model,method,options){
         app.incident.incidentList.add(model);
-        app.incident.incidentForm.close();
+        app.incident.incidentForm.close(null);
     },
     sync: function(method, model, options) {
         options = options || {};
@@ -583,8 +615,8 @@ app.incident.markerView=Backbone.View.extend({
             graphicHeight: 48,
             graphicYOffset: -40,
             graphicXOffset: -18,
-            fillOpacity: 0.7,
-            label:this.model.get('descript')
+            fillOpacity: 0.7
+//            label:this.model.get('descript')
         });
         this.marker.view=this;
 
@@ -610,7 +642,9 @@ app.incident.markerView=Backbone.View.extend({
         //open info box
         app.incident.infoBox.showBox(this.model);
         this.itemView.highlight();
-
+        if(!$('.handle2').parent().hasClass('open')){
+            $('.handle2').click();
+        }
     },
     unselect:function(e){
         console.log(this);
@@ -651,19 +685,27 @@ app.incident.listView=Backbone.View.extend({
 });
 app.incident.formView=Backbone.View.extend({
    el:$('#incident_form'),
+
     initialize:function(){
         _.bindAll(this);
         this.$el.hide();
         this.$el.draggable();
         this.template= _.template($('#incident_form_template').html());
 
+
     },
     events:{
-        "click button":"submit"
+        "click button":"submit",
+        "click .close":"close"
     },
     render:function(){
         this.$el.html(this.template(this.model.toJSON()));
         this.$el.show();
+        this.$el.css("position","absolute");
+        this.$el.css("top", Math.max(0, (($(window).height() - this.$el.outerHeight())) +
+            $(window).scrollTop()) + "px");
+        this.$el.css("left", Math.max(0, (($(window).width() - this.$el.outerWidth()) / 2) +
+            $(window).scrollLeft()) + "px");
 
 
     },
@@ -685,6 +727,7 @@ app.incident.formView=Backbone.View.extend({
 
     },
     close:function(e){
+        e.preventDefault();
         this.model=null;
         this.$el.hide();
         $('#insert_incident').removeClass('active');
@@ -700,9 +743,10 @@ app.incident.infoView =  Backbone.View.extend({
         this.sugCollection=app.incident.suggestion.collectionObj;
         this.$el.hide();
 
-        this.listenTo(this.sugCollection,"sync",this.renderSug,this);
-        this.listenTo(this.sugCollection,"error",this.noResult,this);
+        this.listenTo(this.sugCollection,"Result",this.renderSug,this);
+        this.listenTo(this.sugCollection,"noResult",this.noResult,this);
         this.listenTo(this.sugCollection,"remove",this.removingItems,this);
+
 
         this.$el.find('#incident-sug-list').mCustomScrollbar();
     },
@@ -720,7 +764,7 @@ app.incident.infoView =  Backbone.View.extend({
     search:function(){
         var filter=this.checkBox();
         this.sugCollection.remove(this.sugCollection.models);
-        this.sugCollection.fetch({url:"/index.php/service/vehiclesSuggestion.json/incident/"+this.model.get('ID')+"/distance/1000/status/"+filter,reset:true});
+        this.sugCollection.getData({url:"/index.php/service/vehiclesSuggestion.json/incident/"+this.model.get('ID')+"/distance/1000/status/"+filter,reset:true});
 
 
     },
@@ -769,7 +813,27 @@ app.incident.infoView =  Backbone.View.extend({
 //Vehicle Suggestion List
 app.incident.suggestion={}
 app.incident.suggestion.collection=Backbone.Collection.extend({
-    model:app.vehicle.model
+    model:app.vehicle.model,
+    getData:function(Option){
+        Option=Option || {};
+        Option.success=this.syncSuc;
+        Option.error= this.syncError;
+        this.fetch(Option);
+    },
+    syncError:function(collection,response,options){
+
+        if(response.responseText===""){
+            collection.trigger("noResult");
+        }
+    },
+    syncSuc:function(collection,response,options){
+
+
+            collection.trigger("Result");
+
+    }
+
+
 });
 app.incident.suggestion.collectionObj=new app.incident.suggestion.collection();
 app.incident.suggestion.itemView=Backbone.View.extend({
@@ -780,17 +844,20 @@ app.incident.suggestion.itemView=Backbone.View.extend({
         _.bindAll(this);
         this.incidentModel=options.incidentModel;
         this.$el.on("click",this.findMarker);
-        this.model.on("imRemoved",this.suicide)
+        this.model.on("imRemoved",this.suicide);
+        this.model.on("change",this.render);
     },
     events:{
-        "click a#send-order" : "request"
+        "click a#send-order" : "request",
+        "click a#cancel-order" : "cancel"
     },
-    request:function(){
-        this.requestModel=new app.incident.response.orderRequest();
-        this.requestModel.on('sync',this.showRequestResponse);
-        this.requestModel.set('vehicle',this.model.get('ID'));
-        this.requestModel.set('incident',this.incidentModel.get('ID'));
-        this.requestModel.save();
+    request:function(e){
+        e.preventDefault();
+        this.model.orderRequest(this.incidentModel.get('ID'));
+    },
+    cancel:function(e){
+        e.preventDefault();
+        this.model.orderCancel();
     },
     showRequestResponse:function(){
         this.$el.html(this.requestModel.get('orderID'));
@@ -801,6 +868,7 @@ app.incident.suggestion.itemView=Backbone.View.extend({
         vehicleItem.trigger('showMarker');
     },
     render:function(){
+        this.$el.html("")
         this.$el.html(this.template(this.model.toJSON()));
         return this
     },

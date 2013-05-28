@@ -61,10 +61,13 @@ class M_vehicle_incident extends CI_Model {
         return $orderID;
     }
     function removeVehicle($vehicleID,$incident){
-
+        $this->db->set('validity','0')->where(array('vehicle_ID'=>$vehicleID,'incident_ID'=>$incident))->update('vehicle_incident');
     }
     function getVehicles($incident){
 
+    }
+    function getIncident($vehicle){
+        return $this->db->where(array('vehicle_ID'=>$vehicle,'validity'=>'1'))->limit(1)->get('vehicle_incident')->row()->incident_ID;
     }
     
 }

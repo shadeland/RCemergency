@@ -101,7 +101,7 @@ class service extends REST_Controller
 
         $data=$this->m_vehicle_incident->findVehiclesForIncident($incident,$status,$distance);
         if(count($data)==0){
-            $this->response(null,404);
+            $this->response(null,200);
         }
         $this->response($data,200);
     }
@@ -114,6 +114,21 @@ class service extends REST_Controller
         $data['vehicleID']=$vehicle;
         $data['orderID']=$order;
         $this->response($data,200);
+    }
+    function ordercancel_post(){
+        $this->load->model('m_order');
+        $this->load->model('m_vehicle_incident');
+        $this->load->model('');
+        $orderID=$this->post('order');
+
+        $vehicle=$this->post('vehicle');
+        $incidnet=$this->m_vehicle_incident->getIncident($vehicle);
+        $this->m_order->cancelOrder($orderID);
+        $this->m_vehicle_incident->removeVehicle($vehicle,$incidnet);
+        $data=array('status'=>'success');
+        $this->response($data,200);
+
+
     }
     
   

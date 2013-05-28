@@ -42,25 +42,36 @@
 <body>
 <div id="vehicle-panel" class="slide-out-div">
     <a class="handle" href="#">Content</a>
-    <div id="vehicle_list"  style=" display: block; height:50%">
-        <div class="list-header">
+    <div class="panel-segment">
+        <div class="panel-segment-header">
             <input type="text" id="vechicle_search" placeholder="جستجو"   />
         </div>
+        <div class="panel-segment-content">
+            <div id="vehicle_list"  style=" overflow: hidden; height:100%">
 
-        <div class="list-wrapper" id="list">
-            <ul class="unstyled">
 
-            </ul>
+                <div class="list-wrapper" id="list">
+                    <ul class="unstyled">
+
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="info-wrapper">
-        <div class="list-header">
-            <h3>اطلاعات خودرو</h3>
+    <div class="panel-segment">
+        <div class="panel-segment-header">
+            <h4>اطلاعات خودرو</h4>
         </div>
-        <div id="info_box"  style=" display: block;">
+        <div class="panel-segment-content">
+            <div id="info_box"  style="overflow: hidden;height: 100%">
+                <div class="content">
 
+                </div>
+            </div>
         </div>
     </div>
+
+
 
 </div>
 <div id="incident-panel" class="slide-out-div2">
@@ -170,6 +181,7 @@
     </div>
 <script type="text/x-underscore-template" id="incident_form_template">
     <form class="well span8">
+        <a class="close" href="#">&times;</a>
         <div class="row">
             <div class="span3">
                 <label>طول جغرافیایی</label>
