@@ -40,12 +40,14 @@ class Server extends CI_Controller {
             $this->load->model('m_order');
             $orderID=$this->m_order->hasOrder($vehicleID);
             $response="#ACK;"; //Default Response If We have Nothing To Do
+
             if($data['input2']== "1" || $data['output1']=="1"){//in Mission Or Has Informed
                 //Do Nothing
             }elseif($data['input2']== "0" && $data['output1']=="0" && $orderID ){//Not In Mission ,Not Informed And Has Order
                 $response="@gprs;O1=1;";
                 $this->m_order->makeSended($orderID);//Push Order Out of queue
             }
+
             if($data['input2']=="1" && $data['output1']=="1"){//In Mission And Informed Before
                 $response="@gprs;O1=0"; //set output1 to 0 to turn off the notifier
             }

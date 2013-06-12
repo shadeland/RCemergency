@@ -55,6 +55,9 @@ class M_gpsdata extends CI_Model {
     function getLastPosition($SID){
         return $this->db->where("SID",$SID)->LIMIT(1)->ORDER_BY('recivedate','desc')->get('gps_data');
     }
+    function getLastPositions($SID,$LIMIT=3){
+        return $this->db->where("SID",$SID)->LIMIT($LIMIT)->ORDER_BY('recivedate','desc')->get('gps_data');
+    }
     function parseStatus($data){
         $ref=$this->config->item('device-status-value');
         $status="";

@@ -127,6 +127,26 @@ app.map.view= Backbone.View.extend({
 
         app.map.mapObj=this.map;
         app.map.markersLayer= new OpenLayers.Layer.Vector("Features");
+        this.trackUrl="";
+        app.map.trackLayer= new OpenLayers.Layer.Vector("Track",{
+            projection: this.map.displayProjection,
+            strategies: [new OpenLayers.Strategy.Fixed()],
+
+            protocol: new OpenLayers.Protocol.HTTP({
+                //set the url to your variable//
+                url: "",
+                //format this layer as KML//
+                format: new OpenLayers.Format.KML({
+                    //maxDepth is how deep it will follow network links//
+                    maxDepth: 1,
+                    //extract styles from the KML Layer//
+//                    extractStyles: true,
+                    //extract attributes from the KML Layer//
+                    extractAttributes: true
+                })
+            })
+        });
+
         app.map.featureSelect= new OpenLayers.Control.SelectFeature(app.map.markersLayer,
             {
                 multiple: false,
@@ -142,6 +162,8 @@ app.map.view= Backbone.View.extend({
         //Config The Map And Layers
         this.map.setCenter(new OpenLayers.LonLat(34, 54).transform(this.map.displayProjection, this.map.projection),15);
         this.renderMap();
+
+        this.renderTrackLayer();
         this.renderMarkerLayer();
 //        this.collection = new app.map.vehicles();
 //        app.map.vehicle.collection=this.collection;
@@ -160,6 +182,16 @@ app.map.view= Backbone.View.extend({
         this.map.addLayer(app.map.markersLayer);
         app.map.markersLayer.events.register('featureselected', this, this.selected_feature);
         app.map.markersLayer.events.register('featureunselected', this,this.unselected_feature);
+    },
+    renderTrackLayer:function(){
+       this.map.addLayer(app.map.trackLayer);
+       app.map.trackLayer.setVisibility(false);
+    },
+    refreshTrackLayer:function(SID){
+        this.trackUrl='http://shadeland.net/index.php/kml?vehicleID='+SID;
+
+        app.map.trackLayer.setVisibility(true);
+        app.map.trackLayer.refresh({url:this.trackUrl});
     },
     selected_feature:function(e){
         e.feature.style.fillOpacity= 1;
@@ -276,6 +308,7 @@ app.map.markerView=Backbone.View.extend({
         console.log(this);
         //open info box
         app.map.infoBox.showBox(this.model);
+        app.map.mapView.refreshTrackLayer(this.model.get('ID'));
         this.itemView.highlight();
         if(!$('.handle').parent().hasClass('open')){
             $('.handle').click();
@@ -780,6 +813,7 @@ app.incident.infoView =  Backbone.View.extend({
     renderSug:function(e){
         console.log(this.sugCollection);
         this.$el.find('.alert').remove();
+        this.$el.find('#incident-sug-list').find('#content').html("");
 
 
         _.each(this.sugCollection.models,function(item){
@@ -903,7 +937,7 @@ app.incident.response.orderRequest=Backbone.Model.extend({
 }
 app.render = function (){
     app.makePanels();
-    var mapView = new app.map.view({mapType:"osm"});
+    app.map.mapView = new app.map.view({mapType:"osm"});
     var vehcileListView= new app.vehicle.listView();
 
     app.map.infoBox=new app.map.infoView();
@@ -912,6 +946,7 @@ app.render = function (){
     app.incident.incidentForm=new app.incident.formView();
     app.incident.listObj=new app.incident.listView();
     app.incident.infoBox=new app.incident.infoView();
+//    app.mapView.refreshTrackLayer('1234');
 
 
 }
@@ -936,7 +971,7 @@ app.makePanels = function () {
         tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
         speed: 300,                               //speed of animation
         action: 'click',                          //options: 'click' or 'hover', action to trigger animation
-        topPos: '100px',                          //position from the top/ use if tabLocation is left or right
+        topPos: '127px',                          //position from the top/ use if tabLocation is left or right
         leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
         fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
     });

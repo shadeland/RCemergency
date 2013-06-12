@@ -39,6 +39,12 @@ class M_vehicles extends CI_Model {
        $avlID=self::getAvlID($vehicleID);
         return $this->m_avl->getLastPosition($avlID);
     }
+    function getLastPositions($vehicleID,$LIMIT){
+        $this->load->model('m_avl');
+        $avlID=self::getAvlID($vehicleID);
+        return $this->m_avl->getLastPositions($avlID,$LIMIT);
+    }
+
     function getAvlID($vehicleID){
         return $this->db->select('avl_ID')->where('ID',$vehicleID)->get('vehicle')->row()->avl_ID;
     }
