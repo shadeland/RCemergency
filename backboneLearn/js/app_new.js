@@ -624,7 +624,9 @@ app.incident.itemView=Backbone.View.extend({
     highlight:function(){
         //We Will Know that marker Has been Selected
         console.log(this.$el);
-        $('#incident_list').find('.highlighted_item-incident').removeClass('highlighted_item');
+        $('.highlighted_item-incident').each(function(){
+           $(this).removeClass('highlighted_item-incident');
+        });
         this.$el.addClass('highlighted_item-incident');
     },
     unLight:function(){
