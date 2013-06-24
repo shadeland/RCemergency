@@ -9,8 +9,8 @@
 //input1=0 i'm Switched On
 // When We receive an input1=0 and and if previous status was input1=1 we should set output1=0;
 
-$config['device-status-lang']['input1']['0'] = "Switched Off";
-$config['device-status-lang']['input1']['1'] = "Switched On";
+$config['device-status-lang']['input1']['1'] = "Switched Off";
+$config['device-status-lang']['input1']['0'] = "Switched On";
 $config['device-status-lang']['input2']['0'] = "Not In Mission";
 $config['device-status-lang']['input2']['1'] = "In Mission";
 $config['device-status-lang']['output1']['0'] = "Not Informed";
@@ -18,8 +18,8 @@ $config['device-status-lang']['output1']['1'] = "Informed";
 $config['device-status-lang']['output2']['0'] = "Reserved";
 $config['device-status-lang']['output2']['1'] = "Reserved";
 
-$config['device-status-value']['input1']['0'] = "0";
-$config['device-status-value']['input1']['1'] = "1";
+$config['device-status-value']['input1']['1'] = "0";
+$config['device-status-value']['input1']['0'] = "1";
 $config['device-status-value']['input2']['0'] = "2";
 $config['device-status-value']['input2']['1'] = "3";
 $config['device-status-value']['output1']['0'] = "4";
@@ -27,8 +27,8 @@ $config['device-status-value']['output1']['1'] = "5";
 $config['device-status-value']['output2']['0'] = "6";
 $config['device-status-value']['output2']['1'] = "7";
 // We gonna hace something Like 0246 which means Switched Off ,Not in Mission,not Informed,But Has Order
-$config['vehicle-status-lang']['0'] = "Switched Off";
-$config['vehicle-status-lang']['1'] = "Switched On";
+$config['vehicle-status-lang']['1'] = "Switched Off";
+$config['vehicle-status-lang']['0'] = "Switched On";
 $config['vehicle-status-lang']['2'] = "Not In Misssion";
 $config['vehicle-status-lang']['3'] = "In Mission";
 $config['vehicle-status-lang']['4'] = "Not Informed";

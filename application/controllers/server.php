@@ -49,7 +49,7 @@ class Server extends CI_Controller {
             }
 
             if($data['input2']=="1" && $data['output1']=="1"){//In Mission And Informed Before
-                $response="@gprs;O1=0"; //set output1 to 0 to turn off the notifier
+                $response="@gprs;O1=0;"; //set output1 to 0 to turn off the notifier
             }
         }else{
 
