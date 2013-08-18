@@ -277,7 +277,7 @@ app.map.markerView=Backbone.View.extend({
         var that=this
 
         this.marker = new OpenLayers.Feature.Vector(point,  null,{
-            externalGraphic: "img/"+that.model.get('type')+".png",
+            externalGraphic: "img/"+that.model.get('type')+"_"+app.statusParser(that.model.get('status').status_ID)+".png",
             graphicWidth: 46,
             graphicHeight: 67,
             graphicYOffset: -67,
@@ -981,6 +981,25 @@ app.makePanels = function () {
 //    $('#vehicle-panel').resizable({handles:"sw"}) ;
 
 };
+app.statusParser = function(status){
+    if(_.isNull(status)){
+        // No data
+        return "normal";
+    }
+    if(status.indexOf('1')=== -1){
+        // Switched off
+        return "gray";
+    }
+    if(status.indexOf('2')=== -1){
+        // In mission
+        return "red";
+    }
+    if(status.indexOf('5')!==-1){
+        //Waiting for Response to Sended Order
+        return "orange"
+    }
+    return "normal";
+}
 $(document).ready(function(){
     app.render();
 

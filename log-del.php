@@ -7,7 +7,8 @@
  * To change this template use File | Settings | File Templates.
  */
 $file = fopen("log.txt",'w');
-fwrite($file, "[[[[[[[[[[[[[[[[[[[" . date(DATE_COOKIE) . "]]]]]]]]]]]]]]]]]]]]]]]]]]\n");
+
 
 fclose($file);
+echo "Log File Is Now Empty";
 ?>
