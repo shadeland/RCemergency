@@ -53,7 +53,13 @@ class M_vehicles extends CI_Model {
         return $this->m_vehicle_status->getStatus($vehicleID);
     }
     function findBySID($sid){
-       return $this->db->select('vehicle.ID')->join('avl',"vehicle.avl_ID = avl.ID")->where('avl.SID',$sid)->get('vehicle')->row()->ID;
+        $result=$this->db->select('vehicle.ID')->join('avl',"vehicle.avl_ID = avl.ID")->where('avl.SID',$sid)->get('vehicle');
+        if($result->num_rows()>0){
+            return $result->row()->ID;
+        }else{
+            return 0;
+        }
+
     }
     function getVehicleWithStatus($statusID,$output=""){
 
@@ -102,7 +108,24 @@ class M_vehicles extends CI_Model {
 *	   join (select * from gps_data order by  recivedate desc limit 1  ) as position on position.SID = avl.SID
 *
 */
+//Adding Vehicles
+function addVehicle($name,$vehicleType_ID,$SID){
+    // Check For The SID
+    $this->load->model('m_avl');
+    $this->load->model('m_vehicle_status');
+    $avl_ID=$this->m_avl->addAvl($SID);
+    $data=array('name'=>$name
+    ,'vehicle_type_ID'=>$vehicleType_ID
+    ,'avl_ID'=>$avl_ID
+    );
+    $this->db->insert('vehicle',$data);
+    $vehicleID=$this->db->insert_id();
+    $result= array('avl_ID'=>$avl_ID,
+    'Vehicle_ID'=>$vehicleID);
+    $this->m_vehicle_status->updateStatus(array('vehicleID'=>$vehicleID, 'statusID'=>'1246'));//Set Default Status
 
+    return $result;
+}
     
    
 	

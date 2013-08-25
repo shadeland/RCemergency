@@ -11,6 +11,7 @@ class M_avl extends CI_Model {
     function getSID($avlID){
 //       $this->load->model('m_gpsdata');
     return $this->db->select('SID')->where('ID',$avlID)->get('avl')->row()->SID;
+
     }
     function getLastPosition($avlID){
         $SID=self::getSID($avlID);
@@ -23,7 +24,16 @@ class M_avl extends CI_Model {
         return $this->m_gpsdata->getLastPositions($SID,$LIMIT)->result_array();
     }
 
-    
+    // Insert And Add Methonds
+    function addAvl($SID){
+       $query= $this->db->select('ID')->where('SID',$SID)->get('avl');
+        if($query->num_rows()>0){
+            return $query->row()->ID;
+        }else{
+            $this->db->insert('avl',array('SID'=>$SID));
+            return $this->db->insert_id();
+        }
+    }
    
 	
 }

@@ -15,7 +15,9 @@ class M_vehicle_status extends CI_Model {
             $fields['create_date']= date("Y-m-d H:i:s");
 //            TODO level1 :should add Gpsdata and Order Fields
             $currentStatus=self::getStatus($fields['vehicle_ID']);
-
+            if(!isset($currentStatus['status_ID'])){
+                $currentStatus['status_ID']="0";
+            }
             if($fields['status_ID']!=$currentStatus['status_ID']){ // If currentStatus was Changed
             $this->db->set("validity",'0')->where("( vehicle_ID = '".$fields['vehicle_ID']."' AND validity = '1')")->update('vehicle_status');//Set Previus Status To Unvalid
             $this->db->set($fields)->insert('vehicle_status');
@@ -30,6 +32,7 @@ class M_vehicle_status extends CI_Model {
 
     }
     function getStatus($vehicleID){
+
        return $this->db->where("vehicle_ID = $vehicleID AND validity = 1")->get('vehicle_status')->row_array();
     }
     function getStatusByID($statusID){

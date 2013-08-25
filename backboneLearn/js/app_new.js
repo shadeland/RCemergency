@@ -278,10 +278,10 @@ app.map.markerView=Backbone.View.extend({
 
         this.marker = new OpenLayers.Feature.Vector(point,  null,{
             externalGraphic: "img/"+that.model.get('type')+"_"+app.statusParser(that.model.get('status').status_ID)+".png",
-            graphicWidth: 46,
-            graphicHeight: 67,
-            graphicYOffset: -67,
-            graphicXOffset: -23,
+            graphicWidth: 55,
+            graphicHeight: 60,
+            graphicYOffset: -60,
+            graphicXOffset: -27,
             fillOpacity: 0.7
 
         });
