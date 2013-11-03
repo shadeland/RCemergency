@@ -474,16 +474,17 @@ app.vehicle.listView=Backbone.View.extend({
     },
     render:function(){
         that=this;
-        this.$el.slideUp('slow',function(){
+
 
             _.each(app.vehicle.vehicleList.models,function(item){
                 if(!item.view){
                var itemV=new app.vehicle.itemView({model:item});
-                this.$el.append(itemV.render().el);
+                    this.$el.append(itemV.render().el);
+                     $('#vehicle_list').mCustomScrollbar("update");
                 }
             },that);
-            that.$el.show("slow");
-        })
+
+
        
 
     }
@@ -769,6 +770,7 @@ app.incident.formView=Backbone.View.extend({
         app.map.mapObj.events.unregister('click',app.map.mapObj,app.incident.insertIncident);
     }
 });
+// Actually This is View For All Suggestion And Dedicated And Information Views With One Global Object !
 app.incident.infoView =  Backbone.View.extend({
     el:$('#incident_info_box'),
     events:{
@@ -798,9 +800,16 @@ app.incident.infoView =  Backbone.View.extend({
     },
     search:function(){
         var filter=this.checkBox();
+        //For Dedicated Vehicles we will start listen to them here ,the we should stop lintning
+
+        this.listenTo(app.incident.dedicated.collectionObj,"Result",this.renderDedicated,this);
+        this.listenTo(app.incident.dedicated.collectionObj,"noResult",this.noResultDedicated,this);
+        this.listenTo(app.incident.dedicated.collectionObj,"remove",this.removingItems,this);
         this.sugCollection.remove(this.sugCollection.models);
         this.sugCollection.getData({url:"/index.php/service/vehiclesSuggestion.json/incident/"+this.model.get('ID')+"/distance/1000/status/"+filter,reset:true});
-
+        // Dedicated Vehicle
+        // Using Golobal Object For Collection !Each time a new incident selected will be refreshed by new data !
+        app.incident.dedicated.collectionObj.getData({url:"/index.php/service/vehiclesDedicated.json/incident/"+this.model.get('ID'),reset:true});
 
     },
     checkBox:function(){
@@ -833,6 +842,12 @@ app.incident.infoView =  Backbone.View.extend({
     },
     removingItems:function(model,collection){
         model.trigger("imRemoved");
+    },
+    renderDedicated:function(e){
+        console.log('render dedicateds!')
+    },
+    noResultDedicated:function(){
+        console.log('Dedicated Returns No Result!');
     },
     hideBox:function(){
         delete this.template;
@@ -912,6 +927,71 @@ app.incident.suggestion.itemView=Backbone.View.extend({
         this.remove();
     }
 })
+//Vechile Dedicsted to Vehicle
+app.incident.dedicated={};
+app.incident.dedicated.collection=Backbone.Collection.extend({
+    model:app.vehicle.model,
+    getData:function(Option){
+        Option=Option || {};
+        Option.success=this.syncSuc;
+        Option.error= this.syncError;
+        this.fetch(Option);
+    },
+    syncError:function(collection,response,options){
+
+        if(response.responseText===""){
+            collection.trigger("noResult");
+        }
+    },
+    syncSuc:function(collection,response,options){
+
+
+        collection.trigger("Result");
+
+    }
+})
+app.incident.dedicated.collectionObj=new app.incident.dedicated.collection();
+app.incident.dedicated.itemView=Backbone.View.extend({
+    template: _.template($('#suggestion_item_template').html()),
+    tagName:'li',
+    className:'vehicle-item',
+    initialize:function(options){
+        _.bindAll(this);
+        this.incidentModel=options.incidentModel;
+        this.$el.on("click",this.findMarker);
+        this.model.on("imRemoved",this.suicide);
+        this.model.on("change",this.render);
+    },
+    events:{
+        "click a#send-order" : "request",
+        "click a#cancel-order" : "cancel"
+    },
+    request:function(e){
+        e.preventDefault();
+        this.model.orderRequest(this.incidentModel.get('ID'));
+    },
+    cancel:function(e){
+        e.preventDefault();
+        this.model.orderCancel();
+    },
+    showRequestResponse:function(){
+        this.$el.html(this.requestModel.get('orderID'));
+        this.requestModel.clear();
+    },
+    findMarker:function(){
+        var vehicleItem=app.vehicle.vehicleList.findWhere({ID:this.model.get('ID')});
+        vehicleItem.trigger('showMarker');
+    },
+    render:function(){
+        this.$el.html("")
+        this.$el.html(this.template(this.model.toJSON()));
+        return this
+    },
+    suicide:function(){
+        this.remove();
+    }
+})
+
 //incident Ordering to Vehicle
 app.incident.response={};
 app.incident.response.orderRequest=Backbone.Model.extend({

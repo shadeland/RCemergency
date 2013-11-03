@@ -64,7 +64,20 @@ class M_vehicle_incident extends CI_Model {
         $this->db->set('validity','0')->where(array('vehicle_ID'=>$vehicleID,'incident_ID'=>$incident))->update('vehicle_incident');
     }
     function getVehicles($incident){
+        $query=$this->db->where(array("incident_ID"=>$incident))->get('order');
+        if($query->num_rows()>0){
+            $vehiclesID=array();
+            $this->load->model('m_vehicles');
+            $result=$query->result_array();
+            foreach($result as $res){
+                array_push($vehiclesID,array('ID'=>$res['vehicle_ID']));
+            }
+//            print_r($vehiclesID);
+            return $this->m_vehicles->getVehicles($vehiclesID);
 
+        }else{
+            return false;
+        }
     }
     function getIncident($vehicle){
         return $this->db->where(array('vehicle_ID'=>$vehicle,'validity'=>'1'))->limit(1)->get('vehicle_incident')->row()->incident_ID;

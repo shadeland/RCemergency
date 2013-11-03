@@ -105,6 +105,15 @@ class service extends REST_Controller
         }
         $this->response($data,200);
     }
+    function vehiclesdedicated_get(){
+        $incident=$this->get('incident');
+        $this->load->model('m_vehicle_incident');
+        $data=$this->m_vehicle_incident->getVehicles($incident);
+        if(!$data){
+            $this->response(null,200);
+        }
+        $this->response($data,200);
+    }
     function orderrequest_post(){
         $this->load->model('m_vehicle_incident');
         $incident=$this->post('incident');
