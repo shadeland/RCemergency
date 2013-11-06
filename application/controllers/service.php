@@ -139,6 +139,20 @@ class service extends REST_Controller
 
 
     }
+    //Driver From Submition
+    function driver_post(){
+        $this->load->model('m_driver');
+        $fullname=$this->post('fullname');
+        $phonenumber=$this->post('phonenumber');
+        $this->m_driver->addDriver($fullname,$phonenumber);
+        $data=array('status'=>'success');
+        $this->response($data,200);
+    }
+    function drivers_get(){
+        $this->load->model('m_driver');
+        $data=$this->m_driver->getDriversList();
+        $this->response($data,200);
+    }
     
   
 }
