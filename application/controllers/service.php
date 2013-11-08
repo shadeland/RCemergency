@@ -55,6 +55,20 @@ class service extends REST_Controller
         $this->response($data,"200");
 
     }
+    //It has Use for Autocomplete Like Typeahead.js
+    function vehiclesList_get(){
+        $this->load->model('m_vehicles');
+        $query=$this->get('q');
+        $filter=array('OID'=>$query);
+        $vehicles=$this->m_vehicles->getVehicles("",$filter);
+        $data=array();
+        foreach($vehicles as $vehicle){
+            array_push($data,array("value"=>$vehicle['OID'],"name"=>$vehicle['name'],"token"=>$vehicle['OID']));
+
+        }
+        $this->response($data,"200");
+
+    }
     function vehicle_get(){
 //        TODO : add search feature
         error_reporting(-1);
