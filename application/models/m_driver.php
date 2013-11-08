@@ -21,7 +21,7 @@ class M_driver extends CI_Model {
 
     function getDriversList(){
 //        TODO : Add filtering feature
-        return $this->db->query("SELECT drivers.ID as id ,fullname,phonenumber,vehicleID FROM drivers left join vehicle_driver on vehicle_driver.driverID=drivers.ID ")->result_array();
+        return $this->db->query("SELECT drivers.ID as id ,fullname,phonenumber,vehicleID,description,outofservice FROM drivers left join vehicle_driver on vehicle_driver.driverID=drivers.ID ")->result_array();
     }
 
     function editDriver($driverID,$driverName,$driverPhonenumber,$description,$outOfService){

@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/screen.css"/>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
     <script type="text/javascript" src="js/jquery.js"></script>
 
@@ -24,6 +25,7 @@
     <link rel="stylesheet" href="css/backgrid.min.css"/>
     <script type="text/javascript" src="js/backgrid.js"></script>
     <script type="text/javascript" src="https://github.com/epeli/underscore.string/raw/master/dist/underscore.string.min.js"></script>
+    <script type="text/javascript" src="js/typeahead.js"></script>
     <script type="text/javascript" src="js/jquery.tabSlideOut.v1.3.js"></script>
     <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <link rel="stylesheet" href="js/jquery.mCustomScrollbar.css"/>
@@ -53,10 +55,15 @@
             <input type="text" name="fullname" class="span3" id="lat" placeholder=""  >
             <label>شماره تلفن</label>
             <input type="text" name="phonenumber" class="span3" id="lon" placeholder=""   >
+            <label>نوضیحات</label>
+            <textarea class="form-control" name="description" rows="3"></textarea>
 
 
         </div>
-
+        <div class="span3">
+            <label>خودرو تحویلی</label>
+            <input type="text" name="vehicleID" class="span3" id="vehicleID" placeholder="" >
+        </div>
         <button type="submit" class="btn btn-primary pull-right">ثبت</button>
     </div>
  </form>

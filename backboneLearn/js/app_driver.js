@@ -29,6 +29,35 @@ var editCell=Backgrid.Cell.extend({
         return this;
     }
 });
+var Boolean2Cell = Backgrid.Cell.extend({
+
+    /** @property */
+    className: "boolean-cell",
+
+    /** @property */
+    editor: Backgrid.BooleanCellEditor,
+
+    /** @property */
+    events: {
+        "click": "enterEditMode"
+    },
+
+    /**
+     Renders a checkbox and check it if the model value of this column is true,
+     uncheck otherwise.
+     */
+    render: function () {
+        this.$el.empty();
+        this.$el.append($("<input>", {
+            tabIndex: -1,
+            type: "checkbox",
+            checked: (this.formatter.fromRaw(this.model.get(this.column.get("name")))==0)?false:true
+        }));
+        this.delegateEvents();
+        return this;
+    }
+
+});
 app.driver.grid.columns = [{
     name: "id", // The key of the model attribute
     label: "ID", // The name to display in the header
@@ -47,6 +76,14 @@ app.driver.grid.columns = [{
 },{
     name: "vehicleID",
     label: "شماره خودرو",
+    cell: "string" // An integer cell is a number cell that displays humanized integers
+},{
+    name: "outofservice",
+    label: "وضعیت مرخصی",
+    cell: Boolean2Cell // An integer cell is a number cell that displays humanized integers
+},{
+    name: "description",
+    label: "توضیحات",
     cell: "string" // An integer cell is a number cell that displays humanized integers
 },
     {
@@ -77,6 +114,11 @@ app.driver.form = Backbone.View.extend({
     initialize:function(){
         _.bindAll(this);
         console.log("form init");
+//        AutoCoplete Init
+        $('#vehicleID').typeahead({
+            name: 'vehicleID',
+            remote: '/index.php/service/vehiclesList.json?q=%QUERY'
+        });
     },
     events:{
         "click button":"formsubmit"

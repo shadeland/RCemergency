@@ -1156,7 +1156,7 @@ var BooleanCell = Backgrid.BooleanCell = Cell.extend({
     this.$el.append($("<input>", {
       tabIndex: -1,
       type: "checkbox",
-      checked: this.formatter.fromRaw(this.model.get(this.column.get("name")))
+      checked: (this.formatter.fromRaw(this.model.get(this.column.get("name")))==0)?false:true
     }));
     this.delegateEvents();
     return this;

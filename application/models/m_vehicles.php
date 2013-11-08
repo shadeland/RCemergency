@@ -9,9 +9,13 @@ class M_vehicles extends CI_Model {
 
     function getVehicles($vehicles="",$filter=""){
 //        TODO : filter Should Implrement
+        $filterArray=array();
+        if($filter!=""){
+            $filterArray=$filter;
+        }
         if($vehicles==""){
 
-      $vehicles=$this->db->select('ID')->get('vehicle')->result_array();
+      $vehicles=$this->db->select('ID')->like($filterArray)->get('vehicle')->result_array();
         }
       $data=array();
         foreach($vehicles as $vehicle){
