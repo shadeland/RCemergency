@@ -1,6 +1,7 @@
 var app = app || {};
-
-
+//agreg
+app.vent = _.extend({}, Backbone.Events);
+app.selectedIncident=null;
 app.listItem = Backbone.Model.extend({
 
 });
@@ -127,6 +128,7 @@ app.map.view= Backbone.View.extend({
 
         app.map.mapObj=this.map;
         app.map.markersLayer= new OpenLayers.Layer.Vector("Features");
+        app.map.imarkersLayer= new OpenLayers.Layer.Vector("Features");
         this.trackUrl="";
         app.map.trackLayer= new OpenLayers.Layer.Vector("Track",{
             projection: this.map.displayProjection,
@@ -149,8 +151,8 @@ app.map.view= Backbone.View.extend({
 
         app.map.featureSelect= new OpenLayers.Control.SelectFeature(app.map.markersLayer,
             {
-                multiple: false,
-                toggle: true,
+                multiple: true,
+                toggle: false,
                 multipleKey: 'shiftKey'
 
             }
@@ -269,6 +271,7 @@ app.map.view= Backbone.View.extend({
 });
 app.map.markerView=Backbone.View.extend({
     initialize:function(options){
+        _.bindAll(this);
         //bind to model events
         this.listenTo(this.model,'change' ,this.dataChanged);
         this.itemView =options.itemView;
@@ -277,7 +280,7 @@ app.map.markerView=Backbone.View.extend({
         var that=this
 
         this.marker = new OpenLayers.Feature.Vector(point,  null,{
-            externalGraphic: "img/"+that.model.get('type')+"_"+app.statusParser(that.model.get('status').status_ID)+".png",
+            externalGraphic: "img/"+that.model.get('type')+"_"+app.statusParser(that.model)+".png",
             graphicWidth: 55,
             graphicHeight: 60,
             graphicYOffset: -60,
@@ -305,9 +308,10 @@ app.map.markerView=Backbone.View.extend({
         app.map.mapObj.panTo(this.LonLat,15);
     },
     select:function(e){
-        console.log(this);
+
         //open info box
         app.map.infoBox.showBox(this.model);
+        this.linedraw();
         app.map.mapView.refreshTrackLayer(this.model.get('ID'));
         this.itemView.highlight();
         if(!$('.handle').parent().hasClass('open')){
@@ -323,8 +327,42 @@ app.map.markerView=Backbone.View.extend({
         this.itemView.unLight();
         this.marker.style.fillOpacity= 0.7
     },
-    dataChanged:function(){
+    linedraw:function(){
+        var style_green = {
+            strokeColor: "#00FF00",
+            strokeWidth: 3,
+            strokeDashstyle: "dashdot",
+            pointRadius: 6,
+            pointerEvents: "visiblePainted",
+            title: "this is a green line"
+        };
+
         console.log('data Changed from marker');
+        that=this;
+        if(!_.isNull(this.model.get('order'))){
+
+            inc=app.incident.incidentList.findWhere({ID:this.model.get('order').incident_ID});
+            var pointList = [];
+
+            incPoint = new OpenLayers.Geometry.Point(
+                inc.get('position').lon,inc.get('position').lat ).transform(app.map.mapObj.displayProjection, app.map.mapObj.projection);
+            vpoint= new OpenLayers.Geometry.Point(
+                this.model.get('LonLat').lng,this.model.get('LonLat').lat).transform(app.map.mapObj.displayProjection, app.map.mapObj.projection);
+            pointList.push(incPoint,vpoint);
+            console.log(pointList);
+            var lineFeature = new OpenLayers.Feature.Vector(
+                new OpenLayers.Geometry.LineString(pointList),null,style_green);
+            app.map.markersLayer.addFeatures(lineFeature);
+        };
+    },
+    dataChanged:function(){
+
+        console.log('data Changed from marker');
+        that=this;
+
+        this.marker.style.externalGraphic="img/"+that.model.get('type')+"_"+app.statusParser(that.model)+".png",
+//        this.marker.imageDiv.firstChild.setAttribute(
+//            'src', "img/"+that.model.get('type')+"_"+app.statusParser(that.model)+".png");
         this.marker.move(new OpenLayers.LonLat(this.model.get('LonLat').lng,this.model.get('LonLat').lat).transform(app.map.mapObj.displayProjection, app.map.mapObj.projection)
         )
     }
@@ -339,7 +377,8 @@ app.vehicle.model = Backbone.Model.extend({
     },
     defaults:{
         type:"ambulance",
-        order:null
+        order:null,
+        distance:0,
     },
     initialize:function(){
         _.bindAll(this);
@@ -389,15 +428,22 @@ app.vehicle.itemView= Backbone.View.extend({
         this.$el.on("click",".addMarker",this,this.addMarker);
         this.$el.on("click",".removeMarker",this,this.removeMarker);
         this.$el.on("click",".refreshModel",this,this.refreshModel);
-        this.$el.on("click",this,this.locateMarker);
 
+        this.$el.on("click",this,this.locateMarker);
+        this.listenTo(app.vent,'incidentSelect',this.calcDistance);
+        this.listenTo(app.vent,'incidentUnselect',this.discalc);
         this.listenTo(this.model,'sync' ,this.fetch_success);
+        this.model.on('change',this.refresh,this);
     },
     render:function(){
         this.$el.html(this.template(this.model.toJSON()));
         this.addMarker({data:this});
         return this;
 
+    },
+    refresh:function(e){
+
+        this.$el.html(this.template(this.model.toJSON()));
     },
     fetch_success:function(){
       console.log("from Item View");
@@ -441,6 +487,19 @@ app.vehicle.itemView= Backbone.View.extend({
         //We Will Know that marker Has been Selected
 
         this.$el.addClass('highlighted_item');
+    },
+
+    discalc:function(){
+      this.model.set('distance',0);
+    },
+    calcDistance:function(){
+      lat=this.model.get('LonLat').lat;
+      lon=this.model.get('LonLat').lng;
+      inlat=app.selectedIncident.model.get('position').lat;
+      inlon=app.selectedIncident.model.get('position').lon;
+
+        distance=app.distance(lat,lon,inlat,inlon);
+        this.model.set('distance',distance);
     },
     unLight:function(){
         //We Will Know that marker Has been unSelected
@@ -498,6 +557,28 @@ app.map.infoView =  Backbone.View.extend({
         this.$el.mCustomScrollbar({advanced:{
             updateOnContentResize: true
         }});
+        this.listenTo(app.vent,'incidentSelect',function(){
+            if(this.model!=undefined){
+            this.$el.find('.order_btn').removeAttr('disabled');
+                var that=this
+            setTimeout(function(){that.$el.find('.order_btn').append("به سانحه شماره "+app.selectedIncident.model.get('ID')+"("+that.model.get('distance')+")")},1000)
+            }
+        },this)
+        this.listenTo(app.vent,'incidentUnselect',function(){
+                if(this.model!=undefined){
+            this.$el.find('.order_btn').attr('disabled','disabled');
+                }
+        },this);
+
+        this.$el.on("click",".order_btn",this,this.sendOrder);
+        _.bindAll(this);
+    },
+    sendOrder:function(e){
+        self= e.data;
+        self.model.orderRequest(app.selectedIncident.model.get('ID'));
+        self.$el.find('.order_btn').attr('disabled','disabled');
+        self.$el.find('.order_btn').html("درحال ارسال");
+
     },
     showBox:function(model){
         //TODO : should inmplent for incident
@@ -507,9 +588,20 @@ app.map.infoView =  Backbone.View.extend({
 
 
         this.model=model;
+        this.listenTo(this.model,'orderRequested',function(){
+            if(this.model!=undefined){
+                this.$el.find('.order_btn').attr('disabled','disabled');
+                this.$el.find('.order_btn').html('در ماموریت');
+            }
+        },this);
         this.template= _.template($('#info_table_template').html());
         this.$el.show();
         this.$el.find('.content').html(this.template(this.model.toJSON()));
+        if(app.selectedIncident==null){
+            this.$el.find('.order_btn').attr('disabled','disabled');
+        }else{
+            this.$el.find('.order_btn').append("به سانحه شماره "+app.selectedIncident.model.get('ID')+"("+this.model.get('distance')+")");
+        }
 //        this.$el.mCustomScrollbar('update');
 
     },
@@ -524,8 +616,8 @@ app.toolbar.view=Backbone.View.extend({
    el:$('#toolbar'),
     initialize:function(){
 
-        this.$el.offset({top:30,left:20});
-        this.$el.draggable();
+//        this.$el.offset({top:30,left:20});
+//        this.$el.draggable();
         this.$el.on('click','#insert_incident',this,this.toggleInsertIncident);
     },
     events:{
@@ -681,6 +773,9 @@ app.incident.markerView=Backbone.View.extend({
         if(!$('.handle2').parent().hasClass('open')){
             $('.handle2').click();
         }
+        app.selectedIncident=this;
+        app.vent.trigger('incidentSelect');
+
     },
     unselect:function(e){
         console.log(this);
@@ -688,6 +783,8 @@ app.incident.markerView=Backbone.View.extend({
         app.incident.infoBox.hideBox();
         this.itemView.unLight();
         this.marker.style.fillOpacity= 0.7
+        app.selectedIncident=null;
+        app.vent.trigger('incidentUnselect');
     },
     dataChanged:function(){
         console.log('data Changed from marker');
@@ -746,8 +843,18 @@ app.incident.formView=Backbone.View.extend({
 
     },
     addIncident:function(model){
+        console.log(model);
         this.model=model;
-        this.render();
+        var that=this
+        address='http://nominatim.openstreetmap.org/reverse?format=json&lat='+model.get('position').lat+'&lon='+model.get('position').lon+'&zoom=27';
+        $.getJSON( address, function( data ) {
+            console.log(data.display_name);
+            that.model.set('address',data.display_name);
+            that.render();
+            });
+
+
+
     },
     submit:function(e){
         // TODO : form data validation
@@ -755,11 +862,13 @@ app.incident.formView=Backbone.View.extend({
         this.model.set({
 
             type:this.$el.find('#type').val(),
-            descript:this.$el.find('#descript').val()
+            descript:this.$el.find('#descript').val(),
+            address:this.$el.find('#address').val()
         });
         if(this.model.hasChanged()){
             this.model.save();
         }
+        this.close(e);
 
     },
     close:function(e){
@@ -1026,43 +1135,50 @@ app.render = function (){
     app.toolbar.obj=new app.toolbar.view();
     app.vehicle.vehicleList.fetch();
     app.incident.incidentForm=new app.incident.formView();
-    app.incident.listObj=new app.incident.listView();
+    setTimeout(function(){
+        app.incident.listObj=new app.incident.listView();
+    },1000)
+
     app.incident.infoBox=new app.incident.infoView();
 //    app.mapView.refreshTrackLayer('1234');
 
 
 }
 app.makePanels = function () {
-    $('#vehicle-panel').tabSlideOut({
-        tabHandle: '.handle',                     //class of the element that will become your tab
-        pathToTabImage: 'img/vehicle-panel.png', //path to the image for the tab //Optionally can be set using css
-        imageHeight: '62px',                     //height of tab image           //Optionally can be set using css
-        imageWidth: '62px',                       //width of tab image            //Optionally can be set using css
-        tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
-        speed: 300,                               //speed of animation
-        action: 'click',                          //options: 'click' or 'hover', action to trigger animation
-        topPos: '100px',                          //position from the top/ use if tabLocation is left or right
-        leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
-        fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
-    });
-    $('#incident-panel').tabSlideOut({
-        tabHandle: '.handle2',                     //class of the element that will become your tab
-        pathToTabImage: 'img/incident-panel.png', //path to the image for the tab //Optionally can be set using css
-        imageHeight: '62px',                     //height of tab image           //Optionally can be set using css
-        imageWidth: '62px',                       //width of tab image            //Optionally can be set using css
-        tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
-        speed: 300,                               //speed of animation
-        action: 'click',                          //options: 'click' or 'hover', action to trigger animation
-        topPos: '127px',                          //position from the top/ use if tabLocation is left or right
-        leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
-        fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
-    });
+//    $('overlay_listl').tabSlideOut({
+//        tabHandle: '.handle',                     //class of the element that will become your tab
+//        pathToTabImage: 'img/vehicle-panel.png', //path to the image for the tab //Optionally can be set using css
+//        imageHeight: '62px',                     //height of tab image           //Optionally can be set using css
+//        imageWidth: '62px',                       //width of tab image            //Optionally can be set using css
+//        tabLocation: 'right',                      //side of screen where tab lives, top, right, bottom, or left
+//        speed: 300,                               //speed of animation
+//        action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+//        topPos: '100px',                          //position from the top/ use if tabLocation is left or right
+//        leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+//        fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
+//    });
+//    $('#incident-panel').tabSlideOut({
+//        tabHandle: '.handle2',                     //class of the element that will become your tab
+//        pathToTabImage: 'img/incident-panel.png', //path to the image for the tab //Optionally can be set using css
+//        imageHeight: '62px',                     //height of tab image           //Optionally can be set using css
+//        imageWidth: '62px',                       //width of tab image            //Optionally can be set using css
+//        tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+//        speed: 300,                               //speed of animation
+//        action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+//        topPos: '127px',                          //position from the top/ use if tabLocation is left or right
+//        leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+//        fixedPosition: false                      //options: true makes it stick(fixed position) on scroll
+//    });
 
 //    $('#vehicle-panel').resizable({handles:"sw"}) ;
 
 };
-app.statusParser = function(status){
-    if(_.isNull(status)){
+app.statusParser = function(model){
+    status=model.get('status').status_ID;
+    if(!_.isNull(model.get('order'))){
+        return "red";
+    }
+    if(_.isNull(status) || _.isUndefined(status)){
         // No data
         return "normal";
     }
@@ -1074,17 +1190,33 @@ app.statusParser = function(status){
         // In mission
         return "red";
     }
-    if(status.indexOf('5')!==-1){
-        //Waiting for Response to Sended Order
-        return "orange"
-    }
+//    if(status.indexOf('5')!==-1){
+//        //Waiting for Response to Sended Order
+//        return "orange"
+//    }
     return "normal";
 }
 $(document).ready(function(){
     app.render();
-
+    setInterval(function(){
+        app.vehicle.vehicleList.fetch();
+    },300000)
 
 
 })
+app.distance=function(lat1, lon1, lat2, lon2, unit) {
+
+    var R = 6371; // km (change this constant to get miles)
+    var dLat = (lat2-lat1) * Math.PI / 180;
+    var dLon = (lon2-lon1) * Math.PI / 180;
+    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.cos(lat1 * Math.PI / 180 ) * Math.cos(lat2 * Math.PI / 180 ) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    var d = R * c;
+    if (d>1) return Math.round(d)+"km";
+    else if (d<=1) return Math.round(d*1000)+"m";
+    return d;
+}
 
 ;

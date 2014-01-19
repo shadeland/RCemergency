@@ -1,5 +1,13 @@
 /* Vehicle Item List And More
 */
+td{
+    max-width: 100px !important;
+    word-break:break-all !important;
+}
+table.backgrid{
+    table-layout: fixed;
+    width: 100%;
+}
 .vehicle-item {
     /*background: #ffffff;*/
 
@@ -58,7 +66,7 @@
 .slide-out-div{
     /*padding: 20px;*/
 
-    height: 80% !important;
+    height: 100% !important;
     width: 250px;
     background: #f1f1f1;
     direction: rtl;
@@ -78,8 +86,8 @@
 .slide-out-div2{
     /*padding: 20px;*/
 
-    height: 80% !important;
-    width: 400px;
+    height: 100% !important;
+    width: 250px;
     background: #f1f1f1;
     direction: rtl;
     top:100px;
@@ -129,7 +137,7 @@ html, body, #map {
     font-family: 'Droid Arabic Naskh' !important;
     font-style: normal;
     margin: 0;
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 /*for BOOTSTRAP OpenLayer Conflicts Debug*/
@@ -153,6 +161,8 @@ h3,h2,h1,h4,h5{
 }
 .info-category{
     font-weight: bold;
+    font-size: 11px;
+    text-align: center !important;
 }
 .list_wrapper{
     width:300px;

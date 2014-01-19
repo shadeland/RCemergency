@@ -41,30 +41,28 @@
 </head>
 <body>
 <div id="vehicle-panel" style="line-height: 1; position: absolute; height: 150px; top: 0px; right: -3px;" class="slide-out-div">
-    <div style="padding: 8px"><a href="vehicle.php">مدیریت خودرو ها</a> | <a href="driver.php">مدیریت راننده ها</a></div>
+   <div style="height: 150px;padding-top:10px;padding-right: 10px">
 
-    <div style="height: 150px;padding-top:10px;padding-right: 10px">
-
-        <p> <span for="city" style="width: 50px ;float:right;padding-top: 10px">
+       <p> <span for="city" style="width: 50px ;float:right;padding-top: 10px">
                استان
            </span><select class="span2">
 
-                <option>تهران</option>
+           <option>تهران</option>
 
-            </select></p>
-        <p><span for="city" style="width: 50px ;float:right;padding-top: 10px">         شهر
+       </select></p>
+       <p><span for="city" style="width: 50px ;float:right;padding-top: 10px">         شهر
            </span><select class="span2">
 
-                <option>تهران</option>
+           <option>تهران</option>
 
-            </select></p>
-        <p><span for="city" style="width: 50px ;float:right;padding-top: 10px">مرکز
+       </select></p>
+       <p><span for="city" style="width: 50px ;float:right;padding-top: 10px">مرکز
            </span><select class="span2">
 
-                <option>سازمان امداد </option>
+           <option>سازمان امداد </option>
 
-            </select></p>
-    </div>
+       </select></p>
+   </div>
     <div style="height: 180px" class="panel-segment">
         <div class="panel-segment-header">
             <input type="text" id="vechicle_search" placeholder="جستجو"   />
@@ -102,7 +100,7 @@
 
     <div class="panel-segment">
         <div class="panel-segment-header">
-<!--            <input type="text" class="span2" id="incident_search" placeholder="جستجو"   />-->
+            <input type="text" id="incident_search" placeholder="جستجو"   />
             <div id="toolbar"   style=" display: block;float: right ;margin-left: 10px">
                 <ul class="unstyled">
                     <button type="button" id="insert_incident" class="btn btn-primary" data-toggle="button"><i class="icon-plus-sign icon-white"></i>سانحه </button>
@@ -122,9 +120,9 @@
                     <table class="table table-condensed table-hover table-striped">
                         <thead>
                         <tr>
-                            <th>شماره</th>
-                            <th>نوع سانحه</th>
-                            <th>تاریخ ثبت</th>
+                            <th>?????</th>
+                            <th>??? ?????</th>
+                            <th>????? ???</th>
 
                         </tr>
                         </thead>
@@ -140,44 +138,45 @@
     </div>
     <div class="panel-segment">
         <div class="panel-segment-header">
-            <h4 style="padding: 0">اطلاعات سانحه</h4>
+            <h4 style="padding: 0">??????? ?????</h4>
         </div>
         <div class="panel-segment-content">
             <div style="position: relative;height: 100%">
                 <div class="info-content" style="top:-40px;left:0;right: 0;bottom: 0;position: absolute;">
                     <div id="incident_info_box" style="position: relative;height: 100%">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#info">جزییات</a></li>
-                            <li style="display:none"><a href="#response" >پاسخ دهی</a></li>
+                            <li class="active"><a href="#info">???????</a></li>
+                            <li><a href="#response">???? ???</a></li>
                         </ul>
                         <div class="tab-content" style="top:40px;left:0;right: 0;bottom: 0;position: absolute;">
 
                             <div class="tab-pane active" id="info" style="height: 100%;overflow: hidden"></div>
-                            <div class="tab-pane" id="response" style="display:none;height: 100%;overflow: hidden;position: relative">
-                            <div class="clear-fix list-filter" >
+                            <div class="tab-pane" id="response" style="height: 100%;overflow: hidden;position: relative";>
+                                <div class="clear-fix list-filter" >
 
-                                <label class="checkbox inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="0">آزاد
-                                </label>
-                                <label class="checkbox inline">
-                                    <input type="checkbox" id="inlineCheckbox2" value="3"> در ماموریت
-                                </label>
-
-                            </div>
+                                    <label class="checkbox inline">
+                                        <input type="checkbox" id="inlineCheckbox1" value="0">????? ?????
+                                    </label>
+                                    <label class="checkbox inline">
+                                        <input type="checkbox" id="inlineCheckbox2" value="3"> ?? ???????
+                                    </label>
+                                    <label class="checkbox inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="5"> ?? ?????? ????
+                                    </label>
+                                </div>
                                 <div class="incident-sug-list " id="incident-sug-list" >
                                     <ul id="content" class="unstyled">
 
-
-                                </ul>
+                                    </ul>
+                                </div>
                             </div>
+
                         </div>
-
                     </div>
-                </div>
-            </div></div>
+                </div></div>
 
+        </div>
     </div>
-</div>
 </div>
 
 <div id="incident_form"  class="overlay_list" style=" display: block;">
@@ -201,9 +200,9 @@
         $(this).tab('show');
     })
 </script>
-<div style="line-height: 1; position: absolute;width:900px; height: 100%; top: 0px; left: 250px;" id="map" >
+    <div style="line-height: 1; position: absolute;width:720px; height: 100%; top: 0px; left: 400px;" id="map" >
 
-</div>
+    </div>
 <script type="text/x-underscore-template" id="incident_form_template">
     <form class="well span8">
         <a class="close" href="#">&times;</a>
@@ -216,7 +215,7 @@
 
                 <label>نوع سانحه</label>
                 <select id="type" name="type" class="span3">
-                    <!-- TODO : incident Type Should Read From Server -->
+<!-- TODO : incident Type Should Read From Server -->
 
                     <option value="1">تصادف</option>
 
@@ -255,7 +254,7 @@
                 <td>
                     <% if( status.status_ID==undefined){%>
                         <span class="label label-success ">آزاد</span>
-                    <% }
+                   <% }
                     else{
                         if ( status.status_ID.indexOf('2')!==-1){ %>
                             <span class="label label-success ">آزاد</span>
@@ -264,7 +263,7 @@
                         <% }
                     } %>
                 </td>
-                <!-- TODO : Localization -->
+<!-- TODO : Localization -->
             </tr>
             <tr>
                 <td colspan="2" class="info-category"> اطلاعات آخرین موقعیت</td>
@@ -321,28 +320,38 @@
 
             </tr>
             <tr>
-                <td>نوع سانحه</td>
-                <td><%= (type=='accident')?"تصادف" :""%></td>
+                <td>وضعیت</td>
+                <td><%= validity %></td>
                 <!-- TODO : Localization -->
             </tr>
             <tr>
-                <td>تاریخ ثبت</td>
-                <td><%= create_date%></td>
-            </tr>
-            <tr>
-                <td >توضیحات</td>
-                <td><%= descript%> </td>
+                <td class="info-category">اطلاعات ماموریت</td>
+                <td></td>
 
             </tr>
             <tr>
-                <td>آدرس</td>
-                <td><%= address %></td>
+                <td class="info-category"> اطلاعات آخرین موقعیت</td>
+                <td> </td>
+
+            </tr>
+            <tr>
+                <td>طول جفرافیایی</td>
+                <td><%= position.lat %></td>
+
+            </tr>
+            <tr>
+                <td>عرض جفرافیایی</td>
+                <td><%= position.lon %></td>
+
+            </tr>
+            <tr>
+                <td>ارتفاع از سطح دریا</td>
+                <td><%= position.alt %></td>
 
             </tr>
 
 
-
-            <!--            TODO-1 compelete this  -->
+<!--            TODO-1 compelete this  -->
             </tbody>
         </table>
 
@@ -364,10 +373,29 @@
 
 
     <div class="vehicle_item ">
+        <% if (!_.isNull(order)){ %>
+            <a id="cancel-order" class="btn btn-danger" style="margin-right:20px;" href="#">لفو ماموریت</a>
+        <%}else{%>
+            <a id="send-order" class="btn btn-primary" style="margin-right:20px;" href="#">انتخاب</a>
+        <%}%>
+        <a href="#"><%= name %></a>
+        <span class="vehicle-type"><%= type %></span>
+        <% if (!_.isNull(order)){ %>
+            <span class="label label-warning">در انتظار ابلاغ</span>
+        <%}%>
+        <% if (status.status_ID.indexOf('1')!==-1){ %>
+            <!--      Switched On    -->
+        <%}else{%>
+            <span class="label ">خاموش</span>
+        <% } %> <% if (status.status_ID.indexOf('2')!==-1){ %>
+            <span class="label label-success ">آزاد</span>
+        <%}else{%>
+            <span class="label label-important ">در ماموریت</span>
+        <% } %>
+        <% if (status.status_ID.indexOf('5')!==-1){ %>
+        <span class="label label-success ">در انتظار پاسخ</span>
+        <%}%>
 
-        <a href="#"><%= OID %></a>
-        <span class="vehicle-type"><% if(type=='ambulance'){%>آمبولانس<%}%></span>
-        <span class="vehicle-type"><%= distance %></span>
 
     </div>
 
@@ -377,9 +405,9 @@
 </script>
 <script type="text/x-underscore-template" id="incident_item_template">
 
-    <td><%= ID %></td>
-    <td><%= (type=="accident")?"تصادف":""%></td>
-    <td><%= create_date %></td>
+        <td><%= ID %></td>
+        <td><%= type %></td>
+        <td><%= create_date %></td>
 
 
 

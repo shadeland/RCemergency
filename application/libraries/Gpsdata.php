@@ -5,10 +5,17 @@ class Gpsdata {
         if(!isset($get['SID'])){
             return false;
         }
+        if (count($get)<16){
+            return false;
+        }
         try {
             $parsed['SID']= isset($get['SID'])? $get['SID'] : "";
             $parsed['type']=isset($get['TYPE'])? $get['TYPE'] : "" ;
+
             $date = self::GmtTimeToLocalTime(strtotime($get['TIME']." ".$get['DATE']));
+
+
+
             $parsed['recivedate']=(isset($get['TIME'])&&isset($get['DATE']))?$date:"";
             $parsed['name']=isset($get['NAME'])? $get['NAME'] : "";
             $parsed['lat']=isset($get['LAT'])? $get['LAT'] : "";

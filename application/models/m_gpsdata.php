@@ -26,9 +26,13 @@ class M_gpsdata extends CI_Model {
         $status= self::parseStatus($array);//Parse Stattus From Data somthing like "1256"
 
          $this->load->model('m_vehicle_status');
-         $statusData=array('vehicleID'=>self::getVehicle($array),'statusID'=>$status);
-         $this->m_vehicle_status->updateStatus($statusData);//Update Status
+         $vehicleID=self::getVehicle($array);
 
+         if ($vehicleID){
+             $statusData=array('vehicleID'=>$vehicleID,'statusID'=>$status);
+
+         $this->m_vehicle_status->updateStatus($statusData);//Update Status
+         }
 
     }
     function getVehicle($data){
@@ -36,7 +40,11 @@ class M_gpsdata extends CI_Model {
             return false;
         }
         $data=$this->db->select('vehicle.ID')->where('avl.SID',$data['SID'])->join('avl','vehicle.avl_ID =avl.ID')->get('vehicle')->row_array();
+        if(isset($data['ID'])){
         return $data['ID'];
+        }else{
+            return false;
+        }
 
     }
     function getAll($dateFrom="",$dateUntil="",$device=""){

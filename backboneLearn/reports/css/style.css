@@ -1,0 +1,22 @@
+.main_container{
+    background-color: #E1E6FA;
+    border-left: 1px #375D81 solid ;
+    border-right: 1px #375D81 solid ;
+    text-align: center;
+}
+.ui-datepicker .ui-datepicker-title,.date
+{
+    /*font-family: 'Yekan' !important;*/
+}
+
+.ui-datepicker th
+{
+    /*font-family: "Nassim";*/
+}
+.rtl{
+direction: rtl;
+ }
+.center
+{
+    /*text-align: center !important;*/
+}

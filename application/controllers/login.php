@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Login extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,13 +21,13 @@ class Welcome extends CI_Controller {
 	{
         error_reporting(-1);
         ini_set('display_errors', TRUE);
-//        $this->load->library('gpsdata');
-//        $this->gpsdata->parseStatus();
-//        $this->load->model('m_vehicle_incident');
-//       print_r($this->m_vehicle_incident->findVehiclesForIncident(34,'1'));
-//		$this->load->view('welcome_message');
-        $this->load->helper('form');
-      $this->load->view('welcome_message');
+        $this->load->helpers('url');
+        if($this->input->post('username')=="sazeman" && $this->input->post('password')=="123456789"){
+
+            redirect('../backboneLearn/index.php');
+        }else{
+            echo "wrong";
+        }
 	}
 }
 

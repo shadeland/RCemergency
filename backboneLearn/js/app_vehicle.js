@@ -1,8 +1,8 @@
 var app = app || {};
 
-app.driver={}
-app.driver.model = Backbone.Model.extend({
-    url: "/index.php/service/driver.json",
+app.vehicle={}
+app.vehicle.model = Backbone.Model.extend({
+    url: "/index.php/service/vehicleList.json",
     initialize:function(){
 
         this.on('editme',formview.fill);
@@ -25,11 +25,11 @@ app.driver.model = Backbone.Model.extend({
 
     }
 });
-app.driver.collection=Backbone.Collection.extend({
-    model:app.driver.model,
-    url: "/index.php/service/drivers.json"
+app.vehicle.collection=Backbone.Collection.extend({
+    model:app.vehicle   .model,
+    url: "/index.php/service/vehiclesFullList.json"
 })
-app.driver.grid={};
+app.vehicle.grid={};
 var editCell=Backgrid.Cell.extend({
     template: _.template('<button>Edit</button>'),
     events: {
@@ -75,32 +75,33 @@ var Boolean2Cell = Backgrid.Cell.extend({
     }
 
 });
-app.driver.grid.columns = [{
+app.vehicle.grid.columns = [{
     name: "id", // The key of the model attribute
     label: "ID", // The name to display in the header
     editable: false, // By default every cell in a column is editable, but *ID* shouldn't be
     // Defines a cell type, and ID is displayed as an integer without the ',' separating 1000s.
     cell:"string"
 }, {
-    name: "fullname",
-    label: "نام و نام خانوادگی",
+    name: "OID",
+    label: "شماره سازمانی",
     // The cell type can be a reference of a Backgrid.Cell subclass, any Backgrid.Cell subclass instances like *id* above, or a string
     cell: "string" // This is converted to "StringCell" and a corresponding class in the Backgrid package namespace is looked up
 }, {
+    name: "type",
+    label: "نوع خودرو",
+    cell: "string" // An integer cell is a number cell that displays humanized integers
+}, {
+    name: "center",
+    label: "مالکیت",
+    cell: "string" // An integer cell is a number cell that displays humanized integers
+}
+    , {
+    name: "SID",
+    label: "شماره گیرنده",
+    cell: "string" // An integer cell is a number cell that displays humanized integers
+},{
     name: "phonenumber",
-    label: "شماره تلفن",
-    cell: "string" // An integer cell is a number cell that displays humanized integers
-},{
-    name: "vehicleID",
-    label: "شماره خودرو",
-    cell: "string" // An integer cell is a number cell that displays humanized integers
-},{
-    name: "outofservice",
-    label: "وضعیت مرخصی",
-    cell: Boolean2Cell // An integer cell is a number cell that displays humanized integers
-},{
-    name: "description",
-    label: "توضیحات",
+    label: "شماره تلفن گیرنده",
     cell: "string" // An integer cell is a number cell that displays humanized integers
 },
     {
@@ -108,16 +109,16 @@ app.driver.grid.columns = [{
         label:"ویرایش",
         cell:editCell
     }];
-app.driver.list= Backbone.View.extend({
-    el:$('#drivergrid'),
+app.vehicle.list= Backbone.View.extend({
+    el:$('#vehiclegrid'),
     initialize:function(){
-        this.model=new app.driver.collection;
+        this.model=new app.vehicle.collection;
         this.grid = new Backgrid.Grid({
-            columns:app.driver.grid.columns,
+            columns:app.vehicle.grid.columns,
             collection: this.model
         });
 
-        app.driver.list.collection=this.model;
+        app.vehicle.list.collection=this.model;
         this.model.on('sync',this.render,this);
         this.model.fetch();
     },
@@ -129,18 +130,56 @@ app.driver.list= Backbone.View.extend({
 
     }
 })
-app.driver.form = Backbone.View.extend({
+app.vehicle.form = Backbone.View.extend({
     el:$('#driverform'),
     initialize:function(){
 
-        _.bindAll(this);
-        console.log("form init");
-//        AutoCoplete Init
-        $('#vehicleID').typeahead({
-            name: 'vehicleID',
-            remote: '/index.php/service/vehiclesList.json?q=%QUERY'
+        $('#center').tree({
+            dragAndDrop: true
         });
-        $('#vehicleID').on("typeahead:selected",this.vehicleSelect);
+        $('#center').bind(
+            'tree.open',
+            function(e) {
+                node1=$('#center').tree('getNodeById', 1);
+                parents=[];
+
+                parents.push(e.node);
+                parent= e.node.parent;
+                while(parent!=null){
+                    parents.push(parent);
+                    parent=parent.parent;
+                }
+
+
+                n1c=node1.children;
+
+
+                others=_.difference(n1c,parents);
+
+                _.each(others,function(node){
+
+                    $('#center').tree('closeNode', node);
+                })
+
+//                current= e.node.parent;
+//                console.log(current);
+//                current=current.getNextSibling();
+//               while(current!=null){
+//
+//                   $('#center').tree('closeNode', current);
+//                   current=current.getNextSibling();
+//               }
+            }
+        );
+//        $('#center').bind( 'tree.select',function(e){
+//            if(this.model){
+//                this.model.set()
+//            }
+//        })
+        _.bindAll(this);
+
+//        AutoCoplete Init
+
         $('#btnnewform').on("click",this.newform);
 
     },
@@ -152,26 +191,32 @@ app.driver.form = Backbone.View.extend({
 
         if(this.previeusModel && this.previeusModel.isNew())this.previeusModel.destroy();
         this.model=model;
-        this.model.on('sync',this.enableVehicle);
+        console.log(model)
+
         this.model.on("servererror",this.showerror);
-        this.$el.find('input[name=fullname]').val(this.model.get('fullname')||"");
-        this.$el.find('input[name=phonenumber]').val(this.model.get('phonenumber')||"");
+        this.$el.find('input[name=OID]').val(this.model.get('OID')||"");
+        this.$el.find('input[name=SID]').val(this.model.get('SID')||"");
         if(this.model.isNew()){
-            this.$el.find('input[name=vehicleBox]').attr('disabled','disabled');
+            this.$el.find("#submit").attr('disabled','disabled');
         }else{
-            this.$el.find('input[name=vehicleBox]').prop('disabled',false);
-            this.$el.find('input[name=vehicleID]').val(this.model.get('vehicleID')||"");
+            this.$el.find("#submit").removeAttr('disabled');
+           this.$el.find("#vtype option[value='"+this.model.get('typeID')+"']").attr('selected','selected');
+
+            var node = $('#center').tree('getNodeById',this.model.get('centerID'));
+
+            $('#center').tree('selectNode', node);
+
         }
 
 
-        this.$el.find('textarea[name=description]').val(this.model.get('description')||"");
+
         this.$el.find('input[name=outofservice]').prop("checked",(this.model.get('outofservice')==1)?true:false);
         this.previeusModel=this.model
     },
     newform:function(e){
         e.preventDefault();
-        this.model=new app.driver.model();
-        app.driver.list.collection.add(this.model);
+        this.model=new app.vehicle.model();
+        app.vehicle.list.collection.add(this.model);
         this.fill(this.model);
 
 
@@ -179,13 +224,14 @@ app.driver.form = Backbone.View.extend({
     formsubmit:function(e){
 
         e.preventDefault();
+        node=$('#center').tree('getSelectedNode');
 
         data={
-            fullname:$('#driverform input[name=fullname]').val(),
-            phonenumber:$('#driverform input[name=phonenumber]').val(),
-            description:$('#driverform textarea[name=description]').val(),
-            vehicleID:$('#driverform input[name=vehicleID]').val(),
-            outofservice:$('#driverform input[name=outofservice]').is(':checked')?"1":"0"
+            OID:$('#driverform input[name=OID]').val(),
+
+            vtype:$('#driverform select[name=vtype]').val()
+            ,center:node.id
+
         };
 
         this.model.submit(data);
@@ -215,9 +261,21 @@ app.driver.form = Backbone.View.extend({
 })
 var formview
 $(document).ready(function(){
-formview  =  new app.driver.form();
-driverlist= new app.driver.list();
+formview  =  new app.vehicle.form();
+    setTimeout(function(){
+        driverlist= new app.vehicle.list();
 
+    },500)
+
+    setTimeout(function(){
+    $.getJSON( "/index.php/service/vehicletype.json")
+        .done(function( json ) {
+            console.log(json);
+            _.each(json,function(item){
+                    console.log(item.lang_fa);
+                $("#vtype").append('<option value="'+item.ID+'">'+item.lang_fa+'</option>');
+            })
+        })},1200);
 
 })
 

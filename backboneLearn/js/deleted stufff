@@ -1,0 +1,54 @@
+///Showing status infornt of vehicles
+<!--
+        <% if (!_.isNull(order)){ %>
+            <span class="label label-warning">در انتظار پاسخ</span>
+        <%}%>
+        <% if (status.status_ID.indexOf('1')!==-1){ %>
+<!--      Switched On    -->
+        <%}else{%>
+        <span class="label ">خاموش</span>
+        <% } %> <% if (status.status_ID.indexOf('2')!==-1){ %>
+            <span class="label label-success ">آزاد</span>
+        <%}else{%>
+        <span class="label label-important ">در ماموریت</span>
+        <% } %>
+        <% if (status.status_ID.indexOf('5')!==-1){ %>
+            <span class="label label-success ">در انتظار پاسخ</span>
+        <%}%>
+*///////////////////////////////////////////
+////////////////////vehicle Info//////////////////////////
+<% if (!_.isNull(order)){ %>
+                        <span class="label label-warning">در انتظار پاسخ</span>
+                    <%}%>
+                    <% if (status.status_ID.indexOf('1')!==-1){ %>
+                        <!--      Switched On    -->
+                    <%}else{%>
+                        <span class="label ">خاموش</span>
+                    <% } %>
+                    <% if (status.status_ID.indexOf('5')!==-1){ %>
+                        <span class="label label-success ">در انتظار پاسخ</span>
+                    <%}%>
+
+/////////////////////////////////////Vehicle Item////////////////////
+  <% if (!_.isNull(order)){ %>
+            <a id="cancel-order" class="btn btn-danger" style="margin-right:20px;" href="#">لفو ماموریت</a>
+        <%}else{%>
+            <a id="send-order" class="btn btn-primary" style="margin-right:20px;" href="#">انتخاب</a>
+        <%}%>
+        <a href="#"><%= name %></a>
+        <span class="vehicle-type"><%= type %></span>
+        <% if (!_.isNull(order)){ %>
+            <span class="label label-warning">در انتظار ابلاغ</span>
+        <%}%>
+        <% if (status.status_ID.indexOf('1')!==-1){ %>
+            <!--      Switched On    -->
+        <%}else{%>
+            <span class="label ">خاموش</span>
+        <% } %> <% if (status.status_ID.indexOf('2')!==-1){ %>
+            <span class="label label-success ">آزاد</span>
+        <%}else{%>
+            <span class="label label-important ">در ماموریت</span>
+        <% } %>
+        <% if (status.status_ID.indexOf('5')!==-1){ %>
+            <span class="label label-success ">در انتظار پاسخ</span>
+        <%}%>

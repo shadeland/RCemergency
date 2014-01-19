@@ -74,8 +74,8 @@ class Server extends CI_Controller {
 
     function llog($res) {
 //
-
-        $file = fopen("log.txt", "a");
+        $filename="log/log.txt".date("y-m-d");
+        $file = fopen($filename, "a");
         fwrite($file, "[[[[[[[[[[[[[[[[[[[" . date(DATE_COOKIE) . "]]]]]]]]]]]]]]]]]]]]]]]]]]\n");
         fwrite($file, print_r($_SERVER, true));
         fwrite($file, print_r($_POST, true));
