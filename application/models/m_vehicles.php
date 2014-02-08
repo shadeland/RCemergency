@@ -15,7 +15,7 @@ class M_vehicles extends CI_Model {
         }
         if($vehicles==""){
 
-      $vehicles=$this->db->select('ID')->like($filterArray)->get('vehicle')->result_array();
+      $vehicles=$this->db->select('ID')->like($filterArray)->order_by('OID')->get('vehicle')->result_array();
         }
       $data=array();
         foreach($vehicles as $vehicle){
@@ -23,11 +23,10 @@ class M_vehicles extends CI_Model {
             array_push($data,$vehicleData);
         }
       return $data;
-
     }
     function sendVehicle($vehicleID){
         $this->load->model('m_order');
-        $vehicle=$this->db->select('vehicle.*,avl.phonenumber as vphonenumber , vehicle_type.type AS type')->where('vehicle.ID',$vehicleID)->join('vehicle_type','vehicle.vehicle_type_ID = vehicle_type.ID')->join('avl','vehicle.avl_ID = avl.ID')->limit(1)->get('vehicle')->row_array();
+        $vehicle=$this->db->select('vehicle.*,avl.phonenumber as vphonenumber ,avl.SID as SID , vehicle_type.type AS type')->where('vehicle.ID',$vehicleID)->join('vehicle_type','vehicle.vehicle_type_ID = vehicle_type.ID')->join('avl','vehicle.avl_ID = avl.ID')->limit(1)->get('vehicle')->row_array();
         $vehicle['LonLat']= self::getVehiclePosition($vehicleID);
         $vehicle['status']= self::getStatus($vehicleID);
         $orderID=$this->m_order->hasOrder($vehicleID);
