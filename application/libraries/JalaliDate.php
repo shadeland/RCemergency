@@ -504,6 +504,13 @@ class JalaliDate{
 
         return array($gy, $gm, $gd);
     }
+    function randomdate(){
+        $date=strtotime('2013/12/0');
+        $date1=strtotime('2014/01/19');
+        $gen=rand($date,$date1);
+
+        return  $this->mds_date('Y/m/d',$gen);
+    }
 
 
 
