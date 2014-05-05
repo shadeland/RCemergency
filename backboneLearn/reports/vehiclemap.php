@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="jqwidgets/styles/jqx.bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="js/style/jquery-ui-1.8.14.css" type="text/css" />
     <script type="text/javascript" src="scripts/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
     <!--    <script type="text/javascript" src="js/jquery.ui.datepicker-cc.all.min.js"></script>-->
     <!--    <script type="text/javascript" src="js/jquery.ui.datepicker-cc.all.min.js"></script>-->
@@ -39,8 +40,12 @@
     <script type="text/javascript" src="jqwidgets/jqxdropdownlist.js"></script>
     <script type="text/javascript" src="jqwidgets/jqxdatatable.js"></script>
     <script type="text/javascript" src="jqwidgets/jqxdata.export.js"></script>
-
-    <script type="text/javascript" src="https://rawgithub.com/RobinHerbots/jquery.inputmask/2.x/dist/jquery.inputmask.bundle.js"></script>
+    <script src="js/pwt-date.js"></script>
+    <link href="css/pwt-datepicker.css" rel="stylesheet">
+    <script src="js/pwt-datepicker.js"></script>
+    <link href="css/bootstrap-timepicker.min.css" rel="stylesheet">
+    <script src="js/bootstrap-timepicker.min.js"></script>
+    <script  type="text/javascript" src="https://rawgithub.com/RobinHerbots/jquery.inputmask/2.x/dist/jquery.inputmask.bundle.js"></script>
 
     <script type="text/javascript" src="http://openlayers.org/api/2.12/OpenLayers.js"></script>
     <script type="text/javascript" src="http://rawgithub.com/chriso/validator.js/master/validator.min.js"></script>
@@ -80,16 +85,21 @@
                 <div style="text-align: right" class="span4">
                     <label>انتخاب بازه زمانی</label>
                     <div class="controls controls-row">
-                        <input  type="text" id="fromDate" name="fromDate" class="span2 ltr center date " placeholder="" value="">
-                        <div class="span  rtl">از تاریخ :</div>
+
+                        <input  type="text" id="fromDate" name="fromDate" class="input-small ltr center date " placeholder="" value="">
+                        <input  type="text" id="fromTime" name="fromDate" class="input-small ltr center time " placeholder="" value="">
+                        <div style="float: right ;padding-top: 5px" class="span1  rtl">از تاریخ :</div>
 
 
                     </div>
                     <div class="controls controls-row">
                         <div class="indicator"></div>
-                        <input type="text" id="toDate" name="toDate" class="span2 ltr center date " placeholder="" value="" >
-                        <div class="span  rtl">تا تاریخ :</div>
+                        <input type="text" id="toDate" name="toDate" class="input-small ltr center date " placeholder="" value="" >
+                        <input  type="text" id="toTime" name="fromDate" class="input-small ltr center time " placeholder="" value="">
+                        <div  style="float: right ;padding-top: 5px"  class="span1  rtl">تا تاریخ :</div>
+                        <div id="error" style="display: none" class="alert alert-error">
 
+                        </div>
                         <span class="help-inline">تاریخ باید به صورت :1392/04/09 وارد شود</span>
                     </div>
                     <div class="controls controls-row">

@@ -370,8 +370,18 @@ app.render = function (){
 
 $(document).ready(function(){
     app.render();
-    $('#fromDate').inputmask("9999/99/99");
-    $('#toDate').inputmask("9999/99/99");
+    $("#fromDate").pDatepicker();
+    $("#toDate").pDatepicker();
+    $('.time').timepicker({
+        minuteStep: 5,
+        showMeridian:false,
+        defaultTime: false,
+        showInputs: false,
+        disableFocus: true// @CHG;charge;
+    });
+
+//    $('#fromDate').inputmask("9999/99/99");
+//    $('#toDate').inputmask("9999/99/99");
     ////////////Drive/////////////
     setTimeout(function(){
         var durl = "/index.php/service_report/vehiclelist.json";
@@ -408,20 +418,36 @@ $(document).ready(function(){
 
     $('#subimtdate').click(function(){
         error=false;
+        errortext=[];
         if($("#driverSelect").jqxListBox('getSelectedItem')){
             ID=$("#driverSelect").jqxListBox('getSelectedItem').value;
         }else{
             error=true;
+            errortext.push("ماشین را انتخاب کنید");
         }
 
         startdate=$("#fromDate").val();
 
         enddate=$('#toDate').val();
-        (validator.isDate(startdate))?startdate=Date.jalaliConverter.jalaliToGregorian(startdate):error=true;
-        (validator.isDate(enddate))?enddate=Date.jalaliConverter.jalaliToGregorian(enddate):error=true;
+        starttime=$("#fromTime").val();
+        endtime=$("#toTime").val();
+        if(validator.isDate(startdate)){startdate=Date.jalaliConverter.jalaliToGregorian(startdate)}else{error=true,errortext.push("تاریخ شروع را مشخص کنید");}
+        if(validator.isDate(enddate)){enddate=Date.jalaliConverter.jalaliToGregorian(enddate)}else{error=true,errortext.push("تاریخ پایان را مشخص کنید");}
+        startdate=startdate+" "+starttime;
+        enddate=enddate+" "+endtime;
         if(error){
-            console.log('error');
+            console.log(errortext);
+            $('#error').empty();
+            _.each(errortext,function(e){
+                
+                $('#error').append("<p>"+e+"</p>").show();
+
+            })
+
+
     }else{
+            $('#error').empty().hide();
+
             console.log('no error')
             url=ID+"/"+startdate+"/"+enddate;
             app.map.mapView.refreshTrackLayer(url);

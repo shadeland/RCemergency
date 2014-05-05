@@ -48,7 +48,6 @@
     <div class="row">
 
 
-
         <div class="offset3 span6">
 
 
