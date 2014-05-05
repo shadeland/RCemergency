@@ -99,13 +99,13 @@
 
 </div>
 <div id="incident-panel" style="line-height: 1; position: absolute; height: 226px; top: 0px; left: -3px;" class="slide-out-div2">
-    <div style="padding: 8px"><a href="reports/missionlistvehicle.php">گزارش خودروها </a> | <a href="reports/vehiclemap.php"> گزارش زمانی</a> | <a href="reports/missionlist.php">گزارش راننده ها </a></div>
+
     <div class="panel-segment">
         <div class="panel-segment-header">
 <!--            <input type="text" class="span2" id="incident_search" placeholder="جستجو"   />-->
             <div id="toolbar"   style=" display: block;float: right ;margin-left: 10px">
                 <ul class="unstyled">
-                    <button type="button" id="insert_incident" class="btn btn-primary" data-toggle="button"><i class="icon-plus-sign icon-white"></i>ماموریت</button>
+                    <button type="button" id="insert_incident" class="btn btn-primary" data-toggle="button"><i class="icon-plus-sign icon-white"></i>سانحه </button>
 
 
                 </ul>
@@ -218,7 +218,7 @@
                 <select id="type" name="type" class="span3">
                     <!-- TODO : incident Type Should Read From Server -->
 
-                    <option value="3">ماموریت </option>
+                    <option value="1">تصادف</option>
 
 
                 </select>
@@ -246,25 +246,22 @@
 
             </tr>
             <tr>
-                <% if( order){%>
-                    <td colspan="2" style=" text-align: center !important;"><button type="button"  class="order_cancel_btn btn btn-danger"><i class="icon-minus-sign icon-white"></i>لغو ماموریت</button></td>
-                <% }else{ %>
                 <td colspan="2" style=" text-align: center !important;"><button type="button"  class="order_btn btn btn-primary"><i class="icon-plus-sign icon-white"></i>ابلاغ ماموریت </button></td>
-                <% } %>
+
 
             </tr>
             <tr>
                 <td>وضعیت</td>
                 <td>
-                    <% if( order){%>
-                        <span class="label label-important">در ماموریت</span>
+                    <% if( status.status_ID==undefined){%>
+                        <span class="label label-success ">آزاد</span>
                     <% }
                     else{
-//                        if ( status.status_ID.indexOf('2')!==-1){ %>
-<!--                            <span class="label label-success ">آزاد</span>-->
-<!--                        --><%//}else{%>
+                        if ( status.status_ID.indexOf('2')!==-1){ %>
                             <span class="label label-success ">آزاد</span>
-<!--                        --><%// }
+                        <%}else{%>
+                            <span class="label label-important ">در ماموریت</span>
+                        <% }
                     } %>
                 </td>
                 <!-- TODO : Localization -->
@@ -325,7 +322,7 @@
             </tr>
             <tr>
                 <td>نوع سانحه</td>
-                <td><%= (type=='accident')?"تصادف" :""%><%= (type=='mission')?"ماموریت" :""%></td>
+                <td><%= (type=='accident')?"تصادف" :""%></td>
                 <!-- TODO : Localization -->
             </tr>
             <tr>
@@ -381,7 +378,7 @@
 <script type="text/x-underscore-template" id="incident_item_template">
 
     <td><%= ID %></td>
-    <td><%= (type=="accident")?"تصادف":""%><%= (type=='mission')?"ماموریت" :""%></td>
+    <td><%= (type=="accident")?"تصادف":""%></td>
     <td><%= create_date %></td>
 
 

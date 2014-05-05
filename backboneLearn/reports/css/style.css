@@ -16,14 +16,7 @@
 .rtl{
 direction: rtl;
  }
-.olTileImage{
-    max-width: none !important;
-}
 .center
 {
     /*text-align: center !important;*/
-}
-.olPopup img{
-    max-height: none !important;
-    max-width: none !important;
 }

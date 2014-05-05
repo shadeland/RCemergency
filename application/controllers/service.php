@@ -150,17 +150,15 @@ class service extends REST_Controller
         $this->response($data,200);
     }
     function ordercancel_post(){
-        error_reporting(-1);
-        ini_set('display_errors', TRUE);
         $this->load->model('m_order');
         $this->load->model('m_vehicle_incident');
         $this->load->model('');
         $orderID=$this->post('order');
 
         $vehicle=$this->post('vehicle');
-//        $incidnet=$this->m_vehicle_incident->getIncident($vehicle);
+        $incidnet=$this->m_vehicle_incident->getIncident($vehicle);
         $this->m_order->cancelOrder($orderID);
-//        $this->m_vehicle_incident->removeVehicle($vehicle,$incidnet);
+        $this->m_vehicle_incident->removeVehicle($vehicle,$incidnet);
         $data=array('status'=>'success');
         $this->response($data,200);
 

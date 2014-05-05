@@ -190,7 +190,7 @@ app.map.view= Backbone.View.extend({
        app.map.trackLayer.setVisibility(false);
     },
     refreshTrackLayer:function(SID){
-        this.trackUrl='http://shadeland.net/index.php/kml_service?vehicleID='+SID;
+        this.trackUrl='http://shadeland.net/index.php/kml?vehicleID='+SID;
 
         app.map.trackLayer.setVisibility(true);
         app.map.trackLayer.refresh({url:this.trackUrl});
@@ -199,11 +199,9 @@ app.map.view= Backbone.View.extend({
         e.feature.style.fillOpacity= 1;
         e.feature.layer.redraw();
         e.feature.view.select(e);
-        console.log(e.feature);
-        console.log(e.feature.view);
     },
     unselected_feature:function(e){
-        e.feature.style.fillOpacity= 0.5;
+        e.feature.style.fillOpacity= 0.7;
         e.feature.layer.redraw();
         e.feature.view.unselect(e);
     },
@@ -355,12 +353,6 @@ app.map.markerView=Backbone.View.extend({
             var lineFeature = new OpenLayers.Feature.Vector(
                 new OpenLayers.Geometry.LineString(pointList),null,style_green);
             app.map.markersLayer.addFeatures(lineFeature);
-            this.line=lineFeature;
-        }else{
-            if(this.line){
-                app.map.markersLayer.removeFeatures(this.line);
-                this.line=undefined;
-            }
         };
     },
     dataChanged:function(){
@@ -562,7 +554,6 @@ app.map.infoView =  Backbone.View.extend({
 //        this.$el.hide();
 //        this.$el.offset({top:120,left:$(window).width()-500});
 //        this.$el.draggable();
-
         this.$el.mCustomScrollbar({advanced:{
             updateOnContentResize: true
         }});
@@ -578,16 +569,9 @@ app.map.infoView =  Backbone.View.extend({
             this.$el.find('.order_btn').attr('disabled','disabled');
                 }
         },this);
-        this.$el.on("click",".order_cancel_btn",this,this.cancelOrder);
+
         this.$el.on("click",".order_btn",this,this.sendOrder);
         _.bindAll(this);
-    },
-    cancelOrder:function(e){
-        self= e.data;
-        self.model.orderCancel();
-        self.$el.find('.order_cancel').attr('disabled','disabled');
-        self.$el.find('.order_cancel').html("درحال ارسال");
-
     },
     sendOrder:function(e){
         self= e.data;
@@ -604,7 +588,6 @@ app.map.infoView =  Backbone.View.extend({
 
 
         this.model=model;
-        this.model.on("change",this.showBox,this);
         this.listenTo(this.model,'orderRequested',function(){
             if(this.model!=undefined){
                 this.$el.find('.order_btn').attr('disabled','disabled');
@@ -624,7 +607,6 @@ app.map.infoView =  Backbone.View.extend({
     },
     hideBox:function(){
         delete this.template;
-        this.model.off("change",this.showBox);
         this.$el.hide();
     }
 })
@@ -1202,11 +1184,11 @@ app.statusParser = function(model){
     }
     if(status.indexOf('1')=== -1){
         // Switched off
-        return "normal";
+        return "gray";
     }
     if(status.indexOf('2')=== -1){
         // In mission
-        return "normal";
+        return "red";
     }
 //    if(status.indexOf('5')!==-1){
 //        //Waiting for Response to Sended Order

@@ -9,47 +9,11 @@ class M_gpsdata extends CI_Model {
 
      function insertData($array){
         $this->load->library('gpsdata');
-         if($array['FIX']=='0'){
-             return false;
-         }
         foreach($array as $key => $value){
             $this->db->set($key,$value);
         }
         $this->db->set('submitdate',date("Y-m-d H:i:s"));
         $this->db->insert('gps_data');
-         $gpsID=$this->db->insert_id();
-//         Check for order of vehicle if it has order then and it  to its point
-         $this->load->model('m_order');
-         $vehicleID=self::getVehicle($array);
-
-         if($vehicleID){
-             $order=$this->m_order->hasOrder($vehicleID);
-            if($order){
-
-                if(is_null($order['startpoint'])){//set ut as start point
-                    $this->m_order->setStartPoint($order['ID'],$gpsID);
-                    echo " kjsdlkf";
-                }elseif(is_null($order['destpoint'])){//set up dest point
-                    $maxdistance = 30;
-                    $incident=$this->m_order->getIncident($order['ID']);
-
-                    $distance=$this->gpsdata->calcDistance($array['lat'],$array['lng'],$incident['lat'],$incident['lon']);
-                   if($distance<$maxdistance){
-                       $this->m_order->setDestPoint($order['ID'],$gpsID);
-                   }
-                }elseif(is_null($order['endpoint'])){//set up dest point
-                    $maxdistance = 30;
-                    $incident=$this->m_order->getIncident($order['ID']);
-
-                    $distance=$this->gpsdata->calcDistance($array['lat'],$array['lng'],$incident['lat'],$incident['lon']);
-                    if($distance<$maxdistance){
-                        $this->m_order->setEndPoint($order['ID'],$gpsID);
-                    }
-                }
-            }
-         }
-
-
          //check status Depended On Out put Data
          //O1=0 You doesnt have any order
          //O1=1 You Have Order
@@ -62,7 +26,7 @@ class M_gpsdata extends CI_Model {
         $status= self::parseStatus($array);//Parse Stattus From Data somthing like "1256"
 
          $this->load->model('m_vehicle_status');
-
+         $vehicleID=self::getVehicle($array);
 
          if ($vehicleID){
              $statusData=array('vehicleID'=>$vehicleID,'statusID'=>$status);
